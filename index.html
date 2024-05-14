@@ -6,6 +6,7 @@
     <title>Hover Expandable Sidebar</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <div class="sidebar">
@@ -23,7 +24,7 @@
                 <span>Cable Tray</span>
             </a>
             <a href="#conduits">
-                <i class="fas fa-pipe"></i>
+                <i class="far fa-clock"></i>
                 <span>Conduits</span>
             </a>
             <a href="#support-steel">
@@ -35,7 +36,7 @@
     <div class="main-content">
         <div class="container">
             <div class="section">
-                <h2>Fixed</h2>
+                <h2>FIXED</h2>
                 <form>
                     <div class="form-group">
                         <label for="frequency">Frequency (Hz)</label>
@@ -146,13 +147,13 @@
                             <option>300/500 V</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-inline">
                         <label for="circuit">Short Circuit Current (kA)</label>
+                        <input type="checkbox" id="circuit1" name="circuit1" value="Input"/>    
+                        <label>Input</label>
+                        <input type="checkbox" id="circuit2" name="circuit2" value="Calculate"/>    
+                        <label>Calculate</label>
                     </div>
-                    <input type="checkbox" id="circuit1" name="circuit1" value="Input"/>    
-                    <label>Input</label> <br> 
-                    <input type="checkbox" id="circuit2" name="circuit2" value="Calculate"/>    
-                    <label>Calculate</label> <br> 
                 </form>
             </div>
 
@@ -282,66 +283,91 @@
 
         <div class="container">
             <div class="section">
-                <h2>Project parameters</h2>
+                <h2>VARIABLE </h2>
                 <form>
                     <div class="form-group">
-                        <label for="frequency">Frequency (Hz)</label>
-                        <select id="frequency">
-                            <option>50</option>
-                            <option>60</option>
-                        </select>
+                        <label for="areaPlantZoneName">Name of Area/Plant/Zone</label>
+                        <input type="text" id="areaPlantZoneName">
                     </div>
                     <div class="form-group">
-                        <label for="voltage">Phase to phase voltage (V)</label>
-                        <select id="voltage">
-                            <option>220</option>
-                            <option>230</option>
-                            <option>240</option>
-                            <option>380</option>
-                            <option>400</option>
-                            <option>415</option>
-                            <option>440</option>
-                            <option>525</option>
-                            <option>660</option>
-                            <option>690</option>
-                        </select>
+                        <label for="areaPlantZoneNumber">Area/Plant/Zone Number</label>
+                        <input type="text" id="areaPlantZoneNumber">
                     </div>
                     <div class="form-group">
-                        <label for="earthing">System Earthing Arrangement</label>
-                        <select id="earthing">
-                            <option>TN-S</option>
-                        </select>
+                        <label for="cableTraySegment">Cable Tray Segment</label>
+                        <input type="text" id="cableTraySegment">
                     </div>
                     <div class="form-group">
-                        <label for="csa">Max. permissible CSA (mm²)</label>
-                        <input type="text" id="csa" value="300">
-                        <a href="#">TIP: View IEC Compatibility</a>
+                        <label for="equipmentName">Name of Equipment</label>
+                        <input type="text" id="equipmentName">
                     </div>
                     <div class="form-group">
-                        <label for="deltaU">Max Δu (%)</label>
-                        <input type="text" id="deltaU" value="4">
+                        <label for="equipmentTag">Equipment Tag</label>
+                        <input type="text" id="equipmentTag">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="text" id="quantity">
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="power">Power</label>
+                        <input type="text" id="power" placeholder="Enter power">
+                        <label><input type="radio" name="unit" value="kW">kW</label>
+                        <label><input type="radio" name="unit" value="HP"> HP</label>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="current">Current</label>
+                        <input type="text" id="current">
+                        <label><input type="radio" name="current" value="Input"> Input</label>
+                        <label><input type="radio" name="current" value="Calculate"> Calculate</label>
                     </div>
                 </form>
             </div>
             <div class="section">
-                <h2>Load input parameters</h2>
                 <form>
+                            
                     <div class="form-group">
-                        <label for="conductors">Type of System</label>
-                        <select id="conductors">
-                            <option>1Ph+N</option>
-                            <option>2Ph</option>
-                            <option>3Ph</option>
-                            <option>3Ph+N</option>
+                        <label for="motorStarter">Motor Starter</label>
+                        <select id="motorStarter">
+                            <option>DOL</option>
+                            <option>S/D</option>
+                            <option>Soft Starter</option>
+                            <option>Inverter</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="load">Sr (kVA) / Pr (kW) / Ir (A)</label>
-                        <input type="text" id="load" value="0">
+                    <div class="form-group-inline">
+                        <label for="from">From (A)</label>
+                        <input type="text" id="from" placeholder="Enter from">
+                        <label for="to">To (B)</label>
+                        <input type="text" id="to" placeholder="Enter to">
                     </div>
                     <div class="form-group">
-                        <label for="powerFactor">Power factor</label>
-                        <input type="text" id="powerFactor" value="0.85">
+                        <label for="heightTray">Height of Tray from Ground</label>
+                        <input type="text" id="heightTray">
+                    </div>
+                    <div class="form-group">
+                        <label for="heightCabinet">Height of Cabinet</label>
+                        <input type="text" id="heightCabinet">
+                    </div>
+                    <div class="form-group">
+                        <label for="totalDistance">Total Distance as per Drawing (A to B)</label>
+                        <input type="text" id="totalDistance">
+                    </div>
+                    <div class="form-group">
+                        <label for="elevationChange">Elevation Change in Tray</label>
+                        <input type="text" id="elevationChange">
+                    </div>
+                    <div class="form-group">
+                        <label for="horizontalDistanceTrayCabinet">Horizontal Distance between Tray and Cabinet</label>
+                        <input type="text" id="horizontalDistanceTrayCabinet">
+                    </div>
+                    <div class="form-group">
+                        <label for="verticalDistanceTrayEquipment">Vertical distance between Tray and Equipment</label>
+                        <input type="text" id="verticalDistanceTrayEquipment">
+                    </div>
+                    <div class="form-group">
+                        <label for="horizontalDistanceTrayEquipment">Horizontal distance between Tray and Equipment</label>
+                        <input type="text" id="horizontalDistanceTrayEquipment">
                     </div>
                 </form>
             </div>
