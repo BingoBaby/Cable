@@ -189,3 +189,39 @@ body {
     width: 25px;
     background-color: #eee;
   }
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+img {
+    width: 120px; 
+    height: auto;
+    margin-left: 10px;
+
+}
+
+.selected {
+    border: 2px solid blue;
+}
+
+.accessory-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 10px; /* Adjust spacing as needed */
+    cursor: pointer;
+    border: 1px solid transparent; /* Initial border style */
+}
+
+.accessory-image.selected {
+    border-color: blue; /* Border color when selected */
+}
+#tReducerImage {
+    width: 200px;
+    height: auto;
+    display: none; /* Initially hide the image */
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Expandable Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <a href="#home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#cable-calculate">
+                <i class="fas fa-calculator"></i>
+                <span>Cables Calculate</span>
+            </a>
+            <a href="#cable-tray">
+                <i class="fas fa-box-open"></i>
+                <span>Cable Tray</span>
+            </a>
+            <a href="#conduits">
+                <i class="far fa-clock"></i>
+                <span>Conduits</span>
+            </a>
+            <a href="#support-steel">
+                <i class="fas fa-tools"></i>
+                <span>Support & Steel</span>
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="section">
+                <h2>FIXED</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="zoneSegment">Zone/Segment Number</label>
+                        <select id="zoneSegment" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="totalCables">Total Number of Cables in Segment</label>
+                        <input type="text" id="totalCables" class="form-control" placeholder="Formula Defined">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="totalDiameter">Total Cable Diameter on Tray</label>
+                        <input type="text" id="totalDiameter" class="form-control" placeholder="Formula Defined">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spareFactor">Spare Factor</label>
+                        <input type="text" id="spareFactor" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="connectedZones">Number of Connected Zones/Segments</label>
+                        <input type="text" id="connectedZones" class="form-control">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="section">
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="connectedZones">Connected Zones</label>
+                        <select id="connectedZones" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="highestDiameter">Highest Diameter of Cable on Tray</label>
+                        <input type="text" id="highestDiameter" class="form-control" placeholder="Formula Defined">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="finalTotalDiameter">Final Total Diameter on Tray</label>
+                        <input type="text" id="finalTotalDiameter" class="form-control" placeholder="Formula Defined">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="totalArea">Total Area of Cable on Tray</label>
+                        <input type="text" id="totalArea" class="form-control" placeholder="Formula Defined">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="totalWeight">Total Weight of Cable on Tray</label>
+                        <input type="text" id="totalWeight" class="form-control" placeholder="Formula Defined">
+                    </div>   
+                                
+                    <div class="form-group">
+                        <label for="numberOfLayers">Number of Layers of Cable</label>
+                        <select id="numberOfLayers" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="section">
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="trayType">Type of Tray</label>
+                        <select id="trayType" class="form-control" onchange="updateTrayImage()">
+                            <option value="cableLadder">Cable Ladder</option>
+                            <option value="cableTray">Cable Tray</option>
+                            <option value="meshTray">Mesh Tray</option>
+                            <option value="giTrunking">GI Trunking</option>
+                            <option value="pvcCableTrunking">PVC Cable Trunking</option>
+                        </select>
+                    </div>
+                    <img id="trayImage" src="cable_ladder_image.jpg" alt="Cable Ladder Image">
+                    <div class="form-group">
+                        <label for="trayThickness">Thickness of Tray</label>
+                        <select id="trayThickness" class="form-control">
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <label>Shape of Bends</label><br>
+                    </div>
+                    <div class="form-group-inline">
+                        <input type="radio" id="round" name="bendShape" value="round">
+                        <label for="round">Round Bend</label>
+                        <input type="radio" id="square" name="bendShape" value="square">
+                        <label for="square">Square Bend</label>
+                    </div>
+                    <div class="form-group-inline">
+                        <img src="image/round_bend_image.png" id="roundImage" alt="Round Bend Image" onclick="selectRadio('round')" style="cursor: pointer;">
+                        <img src="image/square_bend_image.jpg" id="squareImage" alt="Square Bend Image" onclick="selectRadio('square')" style="cursor: pointer;">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>VARIABLE </h2>
+                <form>
+                    <div class="form-group">
+                        <label for="areaName">Name of Area/Plant/Zone</label>
+                        <input type="text" id="areaName" class="form-control" placeholder="User Defined">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="basicLength">Basic Cable Tray Length as Per Drawing (m)</label>
+                        <input type="text" id="basicLength" class="form-control" placeholder="User Defined (m)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dropLength">Cable Tray Drop Length on Panel Side (m)</label>
+                        <input type="text" id="dropLength" class="form-control" placeholder="User Defined (m)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lengthBelowAbove">Cable Tray Length Below/Above Cabinet (m)</label>
+                        <input type="text" id="lengthBelowAbove" class="form-control" placeholder="User Defined (m)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="heightChange">Height Change in the Route (m)</label>
+                        <input type="text" id="heightChange" class="form-control" placeholder="User Defined (m)">
+                    </div>
+                    
+                    <div class="form-group-inline">
+                        <label for="horizontal90">Horizontal 90</label>
+                        <input type="text" id="horizontal90" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/CTC_HorizontalElbow90.png" alt="Horizontal 90 Image" class="accessory-image" onclick="selectAccessory('horizontal90')" id = "horizontal90Image">
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="outerVertical90">Outer Vertical 90</label>
+                        <input type="text" id="outerVertical90" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/CTC_OutsideVerticalRiser90.png" alt="Outer Vertical 90 Image" class="accessory-image" onclick="selectAccessory('outerVertical90')" id = "outerVertical90Image">
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="innerVertical90">Inner Vertical 90</label>
+                        <input type="text" id="innerVertical90" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/CTC_InsideVerticalRiser90.png" alt="Inner Vertical 90 Image" class="accessory-image" onclick="selectAccessory('innerVertical90')" id ="innerVertical90Image">
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="leftReducer">Left Reducer</label>
+                        <input type="text" id="leftReducer" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/CTC_LeftReduce.png" alt="Left Reducer Image" class="accessory-image" onclick="selectAccessory('leftReducer')" id = "leftReducerImage">
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="rightReducer">Right Reducer</label>
+                        <input type="text" id="rightReducer" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/CTC_RightReducer.png" alt="Right Reducer Image" class="accessory-image" onclick="selectAccessory('rightReducer')" id = "rightReducerImage">
+                    </div>
+                </form>
+            </div>
+            <div class="section">
+                <form>             
+                    <div class="form-group-inline">
+                        <label for="centerReducer">Center Reducer</label>
+                        <input type="text" id="centerReducer" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/CTC_StraightReducer.png" alt="Center Reducer Image" class="accessory-image" onclick="selectAccessory('centerReducer')" id = "centerReducerImage">
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="tBend">T Bend</label>
+                        <input type="text" id="tBend" class="form-control" placeholder="User Defined">
+                        <img src="image/CTC/T Bend.jpg" alt="T Bend Image" class="accessory-image" onclick="selectAccessory('tBend')" id="tBendImage">
+                    </div>
+
+                    <div class="form-group-inline">
+                        <label>'T' Bend Reducer</label><br>
+                        <input type="radio" id="tReducerYes" name="tReducerOption" value="yes" onchange="toggleTReducerOptions()">
+                        <label for="tReducerYes">Yes</label>
+                        <input type="radio" id="tReducerNo" name="tReducerOption" value="no" onchange="toggleTReducerOptions()">
+                        <label for="tReducerNo">No</label>
+                    </div>
+                
+                    <div id="tReducerOptions" style="display: none;"> <!-- Hide options initially -->
+                        <div class="form-group">
+                            <label for="higherSize">Higher size of 'T' Reducer</label>
+                            <select id="higherSize" class="form-control">
+                                <option>100</option>
+                                <option>200</option>
+                                <option>300</option>
+                                <option>500</option>
+                                <option>600</option>
+                            </select>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="lowerSize">Lower size of 'T' Reducer</label>
+                            <select id="lowerSize" class="form-control">
+                                <option>50</option>
+                                <option>100</option>
+                                <option>200</option>
+                                <option>300</option>
+                                <option>500</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sizeOfTBend">Size of 'T' Bend</label>
+                        <!-- You can replace the input type text with an appropriate formula -->
+                        <input type="text" id="sizeOfTBend" class="form-control" value="Formula Defined" disabled>
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="horizontal45">Horizontal 45</label>
+                        <input type="text" id="horizontal45" class="form-control" placeholder="User Defined" onchange="toggleAccessoryImage('horizontal45')">
+                        <img src="image/CTC/CTC_HorizontalElbow.png" alt="Horizontal 45 Image" class="accessory-image" id="horizontal45Image">
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="innerVertical45">Inner Vertical 45</label>
+                        <input type="text" id="innerVertical45" class="form-control" placeholder="User Defined" onchange="toggleAccessoryImage('innerVertical45')">
+                        <img src="image/CTC/CTC_InsideVerticalRiser45.png" alt="Inner Vertical 45 Image" class="accessory-image" id="innerVertical45Image">
+                    </div>
+                
+                    <div class="form-group-inline">
+                        <label for="outerVertical45">Outer Vertical 45</label>
+                        <input type="text" id="outerVertical45" class="form-control" placeholder="User Defined" onchange="toggleAccessoryImage('outerVertical45')">
+                        <img src="image/CTC/CTC_OutsideVerticalRiser45.png" alt="Outer Vertical 45 Image" class="accessory-image" id="outerVertical45Image">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
