@@ -8,4 +8,4 @@ Calculate the Cross Section Area of cables and build a cable schedule.
 Calculate the voltage drop of a defined cable and check the maximum length.
 
 ### Mock up 
-Design web idea: [Figma] (https://www.figma.com/design/fnqeB9QmtaFQDKNhnle1j7/ESTEC_CALCULATOR?node-id=3%3A19&t=vUkMofoVKzu0hQTY-1)
+Design web idea: [Figma] (https://www.figma.com/design)
