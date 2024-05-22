@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Cable Input Form{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <a href="{{ url_for('index') }}" class="sidebar-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="{{ url_for('cable_calculate') }}" class="sidebar-link">
+                <i class="fas fa-calculator"></i>
+                <span>Cables Calculate</span>
+            </a>
+            <a href="{{ url_for('cable_tray') }}" class="sidebar-link">
+                <i class="fas fa-box-open"></i>
+                <span>Cable Tray</span>
+            </a>
+            <a href="#conduits" class="sidebar-link">
+                <i class="far fa-clock"></i>
+                <span>Conduits</span>
+            </a>
+            <a href="#support-steel" class="sidebar-link">
+                <i class="fas fa-tools"></i>
+                <span>Support & Steel</span>
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

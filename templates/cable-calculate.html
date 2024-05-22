@@ -1,0 +1,349 @@
+{% extends 'layout.html' %}
+
+{% block title %}Cable Input Form - Cables Calculate{% endblock %}
+
+{% block content %}
+    <div class="container" id="fixed-form">
+        <div class="section" id="section2">
+            <div class="section2">
+                <h3>PROJECT</h3>
+                <form>
+                    <div class="form-group-inline">
+                        <label for="frequency">Frequency (Hz)</label>
+                        <select id="frequency">
+                            <option>50</option>
+                            <option>60</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="voltage">Phase to Phase Voltage (V)</label>
+                        <select id="voltage">
+                            <option>220</option>
+                            <option>230</option>
+                            <option>240</option>
+                            <option>380</option>
+                            <option>400</option>
+                            <option>415</option>
+                            <option>440</option>
+                            <option>525</option>
+                            <option>660</option>
+                            <option>690</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="nautral">Neutral Loading %</label>
+                        <select id="neutral">
+                            <option>50%</option>
+                            <option>75%</option>
+                            <option>85%</option>
+                            <option>100%</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="csa">Maximum permissible CSA (mm2)</label>
+                        <select id="csa">
+                            <option>95</option>
+                            <option>120</option>
+                            <option>150</option>
+                            <option>185</option>
+                            <option>240</option>
+                            <option>300</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="u">Maximum Δ U(%)</label>
+                        <input type="text" id="u">
+                    </div>
+                </form>
+            </div>
+            <div class="section2">
+                <h3>LOAD INPUT</h3>
+                <form>
+                    <div class="form-group-inline">
+                        <label for="typeSystem">Type of System</label>
+                        <select id="typeSystem">
+                            <option>1Ph+N</option>
+                            <option>2Ph</option>
+                            <option>3Ph</option>
+                            <option>3Ph+N</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="u">Power factor</label>
+                        <input type="text" class="default-value" id="powerFactor" value="0.85">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <h3>CABLE INPUT</h3>
+            <form>
+                <div class="form-group-inline">
+                    <label for="cores">No. of Cores</label>
+                    <select id="cores">
+                        <option value="multi">Multi-core</option>
+                        <option value="single">Single core</option>
+                    </select>
+                </div>
+                <div class="form-group-inline">
+                    <label for="installation">Method of Installation</label>
+                    <select id="installation">
+                        <option value="air">Air</option>
+                        <option value="direct-in-ground">Direct in Ground</option>
+                        <option value="underground-duct">Underground Duct</option>
+                    </select>
+                    <div class="form-group-inline">
+                        <label>Help</label>
+                        <input type="checkbox" id="help" checked>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="derating-factor">De-rating factor</label>
+                        <input type="checkbox" id="derating-factor" checked>
+                    </div>
+                </div>
+                <div class="form-group-inline"> 
+
+                    <div class="form-group-inline" id="air-dropdown">
+                        <label for="air-options">Method</label>
+                        <select id="air-options">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+    
+                    <div class="form-group-inline" id="direct-in-ground-dropdown" style="display: none;">
+                        <label for="direct-in-ground-options">Method</label>
+                        <select id="direct-in-ground-options">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+    
+                    <div class="form-group-inline" id="underground-duct-dropdown" style="display: none;">
+                        <label for="underground-duct-options">Method</label>
+                        <select id="underground-duct-options">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div id="image-container" class="image-container"></div>
+                </div>
+                <div class="form-group-inline">
+                    <label for="touching-cables">Touching Cables</label>
+                    <select id="touching-cables">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+
+                <div class="form-group-inline">
+                    <label for="cable-tray-tiers">No. of Cable tray tiers</label>
+                    <select id="cable-tray-tiers">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-group2">
+                    <div class="column">
+                        <div class="form-group-inline">
+                            <label for="circuit">Short Circuit Current (kA)</label>
+                            <input type="radio" id="circuit1" name="circuit" value="Input" checked/>
+                            <label for="circuit1">Input</label>
+                            <input type="radio" id="circuit2" name="circuit" value="Calculate"/>
+                            <label for="circuit2">Calculate</label>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="conductors">Conductor MoC</label>
+                            <select id="conductors">
+                                <option>Copper</option>
+                                <option>Aluminium</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="peMoc">PE Moc</label>
+                            <select id="peMoc">
+                                <option>Copper</option>
+                                <option>Aluminium</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="peMoc">PE Cable</label>
+                            <select id="peMoc">
+                                <option>PE Included</option>
+                                <option>Separate PE</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="insulation">Type of Insulation</label>
+                            <select id="insulation">
+                                <option>XLPE</option>
+                                <option>PVC</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="temperature">Ambient Temperature</label>
+                            <input type="text" id="temperature" value="0">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form-group-inline">
+                            <label for="outersheath">Outersheath</label>
+                            <select id="outersheath">
+                                <option>PVC</option>
+                                <option>HDPE</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="protection">Protection</label>
+                            <select id="protection">
+                                <option>Unarmoured</option>
+                                <option>Armoured</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="cable-length-spare-factor">Cable Length Spare Factor (%)</label>
+                            <input type="text" id="cable-length-spare-factor">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="voltageRating">Cable Voltage Rating</label>
+                            <select id="voltageRating">
+                                <option>0.6/1 kV</option>
+                                <option>300/500 V</option>
+                            </select>
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="cable-colour">Colour code of cables</label>
+                            <select id="cable-colour">
+                                <option>Red-Black</option>
+                                <option>Red-Black-Green-Yellow</option>
+                                <option>Red-Yellow-Blue</option>
+                                <option>Red-Yellow-Blue-Black</option>
+                                <option>Red-Yellow-Blue-Green-yellow</option>
+                                <option>Red-Yellow-Blue-Black-Green-yellow</option>
+                                <option>Brown-Blue</option>
+                                <option>Brown-Blue-Green-Yellow</option>
+                                <option>Brown-Black-Grey</option>
+                                <option>Brown-Black-Grey-Blue</option>
+                                <option>Brown-Black-Grey-Green-Yellow</option>
+                                <option>Brown-Black-Grey-Blue-Green-Yellow</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="buttons-container-fixed">
+        <button type="button" id="save-button-fixed">Save</button>
+        <button type="button" id="reset-button-fixed">Reset</button>
+    </div>
+    
+
+    <div class="container">
+        <div class="section" id="section">
+            <h3>VARIABLE </h3>
+            <form>
+                <div class="form-group-inline">
+                    <label for="areaPlantZoneName">Name of Area/Plant/Zone</label>
+                    <input type="text" id="areaPlantZoneName">
+                </div>
+                <div class="form-group-inline">
+                    <label for="areaPlantZoneNumber">Area/Plant/Zone Number</label>
+                    <input type="text" id="areaPlantZoneNumber">
+                </div>
+                <div class="form-group-inline">
+                    <label for="cableTraySegment">Cable Tray Segment</label>
+                    <input type="text" id="cableTraySegment">
+                </div>
+                <div class="form-group-inline">
+                    <label for="equipmentName">Name of Equipment</label>
+                    <input type="text" id="equipmentName">
+                </div>
+                <div class="form-group-inline">
+                    <label for="equipmentTag">Equipment Tag</label>
+                    <input type="text" id="equipmentTag">
+                </div>
+                <div class="form-group-inline">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity">
+                </div>
+                <div class="form-group-inline">
+                    <label for="power">Power</label>
+                    <input type="text" id="power">
+                    <select name="power" id="unit">
+                        <option selected="selected">kW</option>
+                        <option selected="selected">HP</option>
+                    </select>
+                </div>
+                <div class="form-group-inline">
+                    <label for="current">Current</label>
+                    <input type="text" id="current">
+                    <select name="current" id="current">
+                        <option label="Input" selected="selected">Input</option>
+                        <option label="Calculate" selected="selected">Calculate</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="section">
+            <form>
+                        
+                <div class="form-group-inline">
+                    <label for="motorStarter">Motor Starter</label>
+                    <select id="motorStarter">
+                        <option>DOL</option>
+                        <option>S/D</option>
+                        <option>Soft Starter</option>
+                        <option>Inverter</option>
+                    </select>
+                </div>
+                <div class="form-group-inline">
+                    <label for="from">From A To B</label>
+                    <input type="text" id="fromAtoB">
+                </div>
+                <div class="form-group-inline">
+                    <label for="heightTray">Height of Tray from Ground</label>
+                    <input type="text" id="heightTray">
+                    <label for="heightCabinet">Height of Cabinet</label>
+                    <input type="text" id="heightCabinet">
+                </div>
+                <div class="form-group-inline">
+                    <label for="totalDistance">Total Distance as per Drawing (A to B)</label>
+                    <input type="text" id="totalDistance">
+                </div>
+                <div class="form-group-inline">
+                    <label for="elevationChange">Elevation Change in Tray</label>
+                    <input type="text" id="elevationChange">
+                </div>
+                <div class="form-group-inline">
+                    <label for="horizontalDistanceTrayCabinet">Horizontal Distance between Tray and Cabinet</label>
+                    <input type="text" id="horizontalDistanceTrayCabinet">
+                </div>
+                <div class="form-group-inline">
+                    <label for="heightDistanceTrayEquipment">Height between Tray and Equipment</label>
+                    <input type="text" id="heightDistanceTrayEquipment">
+                </div>
+                <div class="form-group-inline">
+                    <label for="distanceTrayEquipment">Distance between Tray and Equipment</label>
+                    <input type="text" id="distanceTrayEquipment">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="buttons-container-variable">
+        <button type="button" id="calculateButton">Calculate</button>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}
