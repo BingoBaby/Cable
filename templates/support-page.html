@@ -1,0 +1,148 @@
+{% extends 'layout.html' %}
+
+{% block title %}Conduit Calculation{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="sectionConduit1">
+        <h2>FIXED</h2>
+        <form>
+            <div class="form-group-inline">
+                <label for="materialOfSupport">Material of Support</label>
+                <select id="materialOfSupport" class="form-control">
+                    <option>GI-Galvanized Iron</option>
+                    <option>SUS-Stainless Steel</option>
+                    <option>MS-Mild Steel</option>
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <label for="typeOfSteel">Type of Steel</label>
+                <select id="typeOfSteel" class="form-control">
+                    <option>V Steel</option>
+                    <option>U Steel</option>
+                    <option>Plate</option>
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <label for="sizeOfSteel">Size of Steel</label>
+                <select id="sizeOfSteel" class="form-control">
+                    <!-- Options populated from database -->
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <label for="typeOfSupport">Type of Support</label>
+                <select id="typeOfSupport" class="form-control" onchange="changeSupportType()" >
+                    <option>Welded Steel Support</option>
+                    <option>Steel Support with Anchor Bolt</option>
+                    <option>Steel Support with Nut Bolt/Screw</option>
+                    <option>Threaded Rod Support with Clamp</option>
+                    <option>Threaded Rod Support with Anchor Bolt</option>
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <div id="supportTypeImages" class="support-type-images">
+                    <img id="supportImage1" src="{{ url_for('static', filename='image/Support/No1.jpg')}}" alt="Support Type 1" class="support-image" onclick="selectSupportType('Welded Steel Support')">
+                    <img id="supportImage2" src="{{ url_for('static', filename='image/Support/No2.jpg')}}" alt="Support Type 2" class="support-image" onclick="selectSupportType('Steel Support with Anchor Bolt')">
+                    <img id="supportImage3" src="{{ url_for('static', filename='image/Support/No3.jpg')}}" alt="Support Type 3" class="support-image" onclick="selectSupportType('Steel Support with Nut Bolt/Screw')">
+                    <img id="supportImage4" src="{{ url_for('static', filename='image/Support/No4.jpg')}}" alt="Support Type 4" class="support-image" onclick="selectSupportType('Threaded Rod Support with Clamp')">
+                    <img id="supportImage5" src="{{ url_for('static', filename='image/Support/No5.jpg')}}" alt="Support Type 5" class="support-image" onclick="selectSupportType('Threaded Rod Support with Anchor Bolt')">
+                </div>
+            </div>
+            <div class="form-group-inline">
+                <label for="standardDistanceBetweenSupports">Standard Distance Between 2 Supports</label>
+                <input type="text" id="standardDistanceBetweenSupports" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="form-group-inline">
+                <label for="zoneSegmentNumber">Zone/Segment Number</label>
+                <select id="zoneSegmentNumber" class="form-control">
+                    <!-- Options extracted from Cable calculator page -->
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <label for="cableTraySize">Cable Tray Size</label>
+                <input type="text" id="cableTraySize" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="totalLengthOfTray">Total Length of Tray</label>
+                <input type="text" id="totalLengthOfTray" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="totalNumberOfSupports">Total Number of Supports</label>
+                <input type="text" id="totalNumberOfSupports" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="heightOfSupport">Height of Support</label>
+                <input type="text" id="heightOfSupport" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="widthOfSupport">Width of Support</label>
+                <input type="text" id="widthOfSupport" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="totalSizeOfSupport">Total Size of Support</label>
+                <input type="text" id="totalSizeOfSupport" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="totalSteelRequiredPerSupport">Total Steel Required per Support</label>
+                <input type="text" id="totalSteelRequiredPerSupport" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="threadRodSize">Thread Rod Size</label>
+                <input type="text" id="threadRodSize" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="threadRodPerSupport">Thread Rod per Support</label>
+                <input type="text" id="threadRodPerSupport" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+        </div>
+        <div class="section">
+            <div class="form-group-inline">
+                <label for="totalThreadRodRequired">Total Thread Rod Required</label>
+                <input type="text" id="totalThreadRodRequired" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="threadRodCouplingRequired">Thread Rod Coupling Required</label>
+                <input type="text" id="threadRodCouplingRequired" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="anchorBoltRequiredPerSupport">Anchor Bolt Required per Support</label>
+                <input type="text" id="anchorBoltRequiredPerSupport" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="totalAnchorBoltRequired">Total Anchor Bolt Required</label>
+                <input type="text" id="totalAnchorBoltRequired" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="clampsRequiredPerSupport">Clamps Required per Support</label>
+                <input type="text" id="clampsRequiredPerSupport" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="totalClampsRequired">Total Clamps Required</label>
+                <input type="text" id="totalClampsRequired" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+            <div class="form-group-inline">
+                <label for="screwNutBoltType">Screw/Nut Bolt Type</label>
+                <input type="text" id="screwNutBoltType" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="screwNutBoltSize">Screw/Nut Bolt Size</label>
+                <input type="text" id="screwNutBoltSize" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="screwNutBoltRequiredPerSupport">Screw/Nut Bolt Required per Support</label>
+                <input type="text" id="screwNutBoltRequiredPerSupport" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="totalScrewNutBoltRequired">Total Screw/Nut Bolt Required</label>
+                <input type="text" id="totalScrewNutBoltRequired" class="form-control" placeholder="Formula Defined" disabled>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</div>
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends 'layout.html' %}
+
+{% block title %}Conduit Calculation{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="sectionConduit1">
+        <h2>FIXED</h2>
+        <form>
+            <div class="form-group-inline">
+                <label for="typeOfConduit">Type of Conduit</label>
+                <select id="typeOfConduit" class="form-control">
+                    <option>EMT</option>
+                    <option>IMC</option>
+                    <option>PVC</option>
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <label for="standartDistanceBetween2Supports">Standard Distance Between 2 Supports</label>
+                <input type="text" id="standartDistanceBetween2Supports" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="spareFactorForConduit">Spare Factor for Conduit</label>
+                <input type="text" id="spareFactorForConduit" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="typeOfInstallation">Type Of Installation</label>
+                <div class="installation-type" onclick="selectInstallationType('type1')">
+                    <img src="{{ url_for('static', filename='image/Conduit/Typical Installation Type 1.jpg')}}" alt="Type 1 Image">
+                    <input type="radio" name="installationType" value="type1">
+                </div>
+                <div class="installation-type" onclick="selectInstallationType('type2')">
+                    <img src="{{ url_for('static', filename='image/Conduit/Typical Installation Type 2.jpg')}}" alt="Type 2 Image">
+                    <input type="radio" name="installationType" value="type2">
+                </div>
+            </div>
+            <div class="form-group-inline">
+                <label for="standardUnistrutSupportSize">Standard Unistrut Support Size (mm)</label>
+                <input type="text" id="standardUnistrutSupportSize" class="form-control">
+            </div>
+            <div class="form-group-inline">
+                <label for="supportOption">Support Option</label>
+                <select id="supportOption" class="form-control">
+                    <option>Universal Clamps</option>
+                    <option>Omega</option>
+                </select>
+            </div>
+            <div class="form-group-inline">
+                <label for="spareFactorForAccessories">Spare Factor for Accessories (%)</label>
+                <input type="text" id="spareFactorForAccessories" class="form-control">
+            </div>
+        </form>
+    </div>
+    <div class="sectionConduit2">
+        <div class="form-group-inline">
+            <label for="sizeOfConduit">Size of Conduit</label>
+            <input type="text" id="sizeOfConduit" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="distanceFromTrayToEquipment">Distance from Tray to Equipment (met)</label>
+            <input type="text" id="distanceFromTrayToEquipment" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="heightFromEquipmentToTray">Height from Equioment to Tray (met)</label>
+            <input type="text" id="heightFromEquipmentToTray" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="totalQuantityOfConduit">Total Quantity of Conduit (met)</label>
+            <input type="text" id="totalQuantityOfConduit" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div><div class="form-group-inline">
+            <label for="totalUnistrutRequired">Total Unistrut Required (cai)</label>
+            <input type="text" id="totalUnistrutRequired" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div><div class="form-group-inline">
+            <label for="universalClamps">Universal Clamps (cai)</label>
+            <input type="text" id="universalClamps" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div><div class="form-group-inline">
+            <label for="omega">Omega (cai)</label>
+            <input type="text" id="omega" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="conduitCoupling">Conduit Coupling (cai)</label>
+            <input type="text" id="conduitCoupling" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="ninetyElbow">'90' Elbow (cai)</label>
+            <input type="text" id="ninetyElbow" class="form-control" placeholder="User Defined">
+        </div>
+        <div class="form-group-inline">
+            <label for="boxConnector">Box Connector (cai)</label>
+            <input type="text" id="boxConnector" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="combinationCoupling">Combination Coupling (cai)</label>
+            <input type="text" id="combinationCoupling" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="flexibleConduit">Flexible Conduit (cai)</label>
+            <input type="text" id="flexibleConduit" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="flexibleConduitConnector">'Flexible Conduit Connector (cai)</label>
+            <input type="text" id="flexibleConduitConnector" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+        <div class="form-group-inline">
+            <label for="pvcGrommet">PVC Grommet (cai)</label>
+            <input type="text" id="pvcGrommet" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div><div class="form-group-inline">
+            <label for="steelFerrule">Steel Ferrule (cai)</label>
+            <input type="text" id="steelFerrule" class="form-control" placeholder="Formula Defined" disabled="True">
+        </div>
+</div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}
