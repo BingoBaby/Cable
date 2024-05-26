@@ -269,7 +269,62 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function selectInstallationType(type) {
+    // Set the radio button to checked
+    document.querySelector(`input[value="${type}"]`).checked = true;
 
+    // Remove the 'selected' class from all installation types
+    const installationTypes = document.querySelectorAll('.installation-type');
+    installationTypes.forEach(element => {
+        element.classList.remove('selected');
+    });
 
+    // Add the 'selected' class to the selected installation type
+    document.querySelector(`input[value="${type}"]`).parentElement.classList.add('selected');
+}
+
+function changeSupportType() {
+    var dropdown = document.getElementById("typeOfSupport");
+    var selectedValue = dropdown.value;
+
+    // Ẩn tất cả các ảnh và loại bỏ lớp 'active' trước khi hiển thị ảnh tương ứng
+    var images = document.getElementsByClassName("support-image");
+    for (var i = 0; i < images.length; i++) {
+        images[i].classList.remove("active");
+        images[i].style.border = "none";
+    }
+
+    // Hiển thị ảnh tương ứng với giá trị dropdown đã chọn và làm nổi bật
+    var selectedImage = document.getElementById("supportImage1"); // Mặc định chọn ảnh đầu tiên
+    switch (selectedValue) {
+        case "Welded Steel Support":
+            selectedImage = document.getElementById("supportImage1");
+            break;
+        case "Steel Support with Anchor Bolt":
+            selectedImage = document.getElementById("supportImage2");
+            break;
+        case "Steel Support with Nut Bolt/Screw":
+            selectedImage = document.getElementById("supportImage3");
+            break;
+        case "Threaded Rod Support with Clamp":
+            selectedImage = document.getElementById("supportImage4");
+            break;
+        case "Threaded Rod Support with Anchor Bolt":
+            selectedImage = document.getElementById("supportImage5");
+            break;
+        default:
+            selectedImage = document.getElementById("supportImage1");
+            break;
+    }
+
+    selectedImage.classList.add("active");
+    selectedImage.style.border = "2px solid red"; // Viền đỏ xung quanh ảnh được chọn
+}
+
+function selectSupportType(supportType) {
+    var dropdown = document.getElementById("typeOfSupport");
+    dropdown.value = supportType; // Đặt giá trị dropdown bằng giá trị của ảnh được chọn
+    changeSupportType(); // Cập nhật hiển thị ảnh và viền
+}
 
 //flow1

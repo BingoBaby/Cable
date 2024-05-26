@@ -37,11 +37,11 @@ body {
     font-size: 18px;
     color: white;
     display: flex;
-    align-items: center;
     width: 100%;
     transition: background-color 0.3s;
     border-radius: 0 30px 30px 0;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .sidebar-content a:hover {
@@ -99,6 +99,24 @@ body {
 
 .section {
     flex: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.sectionConduit1 {
+    flex: auto;
+    width: 40%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}.sectionConduit2 {
+    flex: auto;
+    width: 20%;
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
@@ -322,3 +340,38 @@ img {
     max-width: 100px;
     height: auto;
 }
+
+.installation-type {
+    display: inline-grid;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.installation-type img {
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+}
+.installation-type label {
+    display: flex;
+    align-items: center;
+}
+
+.support-type-images {
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.support-image {
+    width: 250px;
+    height: auto; 
+    cursor: pointer;
+    border: none; 
+    transition: border 0.3s ease;
+}
+
+.support-image.active {
+    border: 2px solid red; 
+}
+
+        
