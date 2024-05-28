@@ -374,4 +374,17 @@ img {
     border: 2px solid red; 
 }
 
-        
+#resultTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resultTable th, #resultTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center; /* Căn giữa các giá trị trong các ô */
+}
+
+#resultTable th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề cột */
+}

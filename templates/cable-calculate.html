@@ -287,7 +287,7 @@
                 <div class="form-group-inline">
                     <label for="current">Current</label>
                     <input type="text" id="current">
-                    <select name="current" id="current">
+                    <select name="current" id="current1">
                         <option label="Input" selected="selected">Input</option>
                         <option label="Calculate" selected="selected">Calculate</option>
                     </select>
@@ -343,5 +343,59 @@
         <button type="button" id="calculateButton">Calculate</button>
         <button type="button" id="resetButton">Reset</button>
     </div>
+
+    <div id="resultTableDiv">
+        <table id="resultTable" border="1">
+            <thead>
+                <tr>
+                    <th>Power Input (kW)</th>
+                    <th>Voltage</th>
+                    <th>Power Factor</th>
+                    <th>Result</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <div id="resultTableDiv2">
+        <table id="resultTable2" border="1">
+            <thead>
+                <tr>
+                    <th>Name of Area/Plant/Zone</th>
+                    <th>Area/Plant/Zone Number</th>
+                    <th>Cable Tray Segment</th>
+                    <th>Name of Equipment</th>
+                    <th>Equipment Tag</th>
+                    <th>Quantity</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div> -->
+    
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        function toggleProtection() {
+            var peMocSelect = document.getElementById("peMoc");
+            var protectionSelect = document.getElementById("protection");
+
+            if (peMocSelect.value === "copper") {
+                protectionSelect.querySelector("option[value='unarmoured']").style.display = "block";
+                protectionSelect.querySelector("option[value='armoured']").style.display = "none";
+            } else if (peMocSelect.value === "aluminium") {
+                protectionSelect.querySelector("option[value='unarmoured']").style.display = "none";
+                protectionSelect.querySelector("option[value='armoured']").style.display = "block";
+            }
+        }
+
+        // Gọi hàm toggleProtection một lần khi trang được tải để ẩn hoặc hiển thị các tùy chọn mặc định
+        toggleProtection();
+    </script>
 {% endblock %}

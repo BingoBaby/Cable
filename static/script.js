@@ -245,12 +245,147 @@ document.getElementById('reset-button-fixed').addEventListener('click', function
 
 document.addEventListener("DOMContentLoaded", function() {
     // Your existing JavaScript code
+    // HP to kW
+    function hpToKw(hp) {
+        return (hp * 0.7457).toFixed(4);
+    }
 
+    //CurrentInput
+    function CurrentInput(power, voltage, powerFactor) {
+        return (power  * 1000) / (voltage * powerFactor)
+    }
+
+    //CurrentCalculate
+    function CurrentCalculate(power, voltage, powerFactor) {
+        return (power * 1000) / (1.733 * voltage * powerFactor)
+    }
     // Calculate Button
     var calculateButton = document.getElementById("calculateButton");
     calculateButton.addEventListener("click", function() {
         // Add your calculation logic here
-        alert("Calculating...");
+        var powerInput = parseFloat(document.getElementById("power").value);
+        
+        // Get selected unit
+        var unitSelect = document.getElementById("unit");
+        var selectedUnit = unitSelect.options[unitSelect.selectedIndex].text;
+
+        //get voltage values
+        var selectedVoltage = document.getElementById("voltage").value;
+
+        //get powerFactor
+        var powerFactor = document.getElementById("powerFactor").value;
+
+        var currentSelect = document.getElementById("current1");
+        var selectedCurrent = currentSelect.options[currentSelect.selectedIndex].text;
+
+        // HP to kW if selected unit is HP
+        if (selectedUnit === "HP") {
+            var powerInKW = hpToKw(powerInput);
+            // Show the result in a pop-up
+            // alert("Power in kW: " + powerInKW);
+        } else {
+            // Show the input value if unit is kW       
+            // alert("Power in kW: " + powerInput);
+            var powerInKW = powerInput;
+        }
+
+        if(selectedCurrent == "Input") {
+            var I = parseFloat((CurrentInput(powerInKW, selectedVoltage, powerFactor)).toFixed(4));
+            // alert("Output: " + I);
+        } else {
+            var I = parseFloat((CurrentCalculate(powerInKW, selectedVoltage, powerFactor)).toFixed(4));
+            // alert("Output: " + I);
+        }
+        
+        // --------------------- Table result -------------------------
+        var table = document.getElementById('resultTable');
+        var tableBody = table.querySelector('tbody');
+        if(!tableBody) {
+            tableBody= document.createElement('tbody');
+            table.appendChild(tableBody);
+        }
+
+        var newRow = document.createElement('tr');
+
+        var powerCell = document.createElement('td');
+        powerCell.textContent = powerInKW;
+        newRow.appendChild(powerCell);
+
+        var voltageCell = document.createElement('td');
+        voltageCell.textContent = selectedVoltage;
+        newRow.appendChild(voltageCell);
+
+        var powerFactorCell = document.createElement('td');
+        powerFactorCell.textContent = powerFactor;
+        newRow.appendChild(powerFactorCell);
+
+        var resultCell = document.createElement('td');
+        resultCell.textContent = I.toFixed(2);
+        newRow.appendChild(resultCell);
+
+        // Tạo một ô mới cho nút xóa
+        var deleteCell = document.createElement('td');
+        // Tạo nút xóa
+        var deleteButton = document.createElement('button');
+        deleteButton.textContent = 'X';
+        deleteButton.classList.add('delete-button'); // Thêm lớp cho nút xóa để dễ dàng chọn bằng JavaScript
+        // Gắn sự kiện click cho nút xóa
+        deleteButton.addEventListener('click', function() {
+            // Xóa hàng khi nút xóa được nhấp vào
+            newRow.remove();
+        });
+
+        deleteCell.appendChild(deleteButton);
+        // Thêm ô chứa nút xóa vào hàng mới
+        newRow.appendChild(deleteCell);
+
+        tableBody.appendChild(newRow);
+        //-----------------------------------------------------------------------
+
+        //---------------------table showcase -----------------------------------
+        // var NameAreaPlantZone = document.getElementById('areaPlantZoneName').value;
+        // var areaPlantZoneNumber = document.getElementById('areaPlantZoneNumber').value;
+        // var cableTraySegment = document.getElementById('cableTraySegment').value;
+        // var equipmentName = document.getElementById('equipmentName').value;
+        // var equipmentTag = document.getElementById('equipmentTag').value;
+        // var quantity = document.getElementById('quantity').value;
+
+        // var table2 = document.getElementById('resultTable2');
+        // var tableBody2 = table2.querySelector('tbody');
+        // if(!tableBody2) {
+        //     tableBody2= document.createElement('tbody');
+        //     table2.appendChild(tableBody2);
+        // }
+
+        // var newRow = document.createElement('tr');
+
+        // var NameAreaPlantZoneCell = document.createElement('td');
+        // NameAreaPlantZoneCell.textContent = NameAreaPlantZone;
+        // newRow.appendChild(NameAreaPlantZoneCell);
+
+        // var areaPlantZoneNumberCell = document.createElement('td');
+        // areaPlantZoneNumberCell.textContent = areaPlantZoneNumber;
+        // newRow.appendChild(areaPlantZoneNumberCell);
+
+        // var cableTraySegmentCell = document.createElement('td');
+        // cableTraySegmentCell.textContent = cableTraySegment;
+        // newRow.appendChild(cableTraySegmentCell);
+
+        // var equipmentNameCell = document.createElement('td');
+        // equipmentNameCell.textContent = equipmentName;
+        // newRow.appendChild(equipmentNameCell);
+
+        // var equipmentTagCell = document.createElement('td');
+        // equipmentTagCell.textContent = equipmentTag;
+        // newRow.appendChild(equipmentTagCell);
+
+        // var quantityCell = document.createElement('td');
+        // quantityCell.textContent = quantity;
+        // newRow.appendChild(quantityCell);
+        
+
+        // tableBody2.appendChild(newRow);
+
     });
 
     // Reset Button
