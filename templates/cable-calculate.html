@@ -381,21 +381,4 @@
     </div> -->
     
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script>
-        function toggleProtection() {
-            var peMocSelect = document.getElementById("peMoc");
-            var protectionSelect = document.getElementById("protection");
-
-            if (peMocSelect.value === "copper") {
-                protectionSelect.querySelector("option[value='unarmoured']").style.display = "block";
-                protectionSelect.querySelector("option[value='armoured']").style.display = "none";
-            } else if (peMocSelect.value === "aluminium") {
-                protectionSelect.querySelector("option[value='unarmoured']").style.display = "none";
-                protectionSelect.querySelector("option[value='armoured']").style.display = "block";
-            }
-        }
-
-        // Gọi hàm toggleProtection một lần khi trang được tải để ẩn hoặc hiển thị các tùy chọn mặc định
-        toggleProtection();
-    </script>
 {% endblock %}
