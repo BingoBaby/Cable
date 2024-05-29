@@ -62,10 +62,10 @@
                     <div class="form-group-inline">
                         <label for="typeSystem">Type of System</label>
                         <select id="typeSystem">
-                            <option>1Ph+N</option>
-                            <option>2Ph</option>
-                            <option>3Ph</option>
-                            <option>3Ph+N</option>
+                            <option value="1Ph+N">1Ph+N</option>
+                            <option value="2Ph">2Ph</option>
+                            <option value="3Ph">3Ph</option>
+                            <option value="3Ph+N">3Ph+N</option>
                         </select>
                     </div>
                     <div class="form-group-inline">
@@ -154,8 +154,8 @@
                         <div class="form-group-inline">
                             <label for="conductors">Conductor MoC</label>
                             <select id="conductors">
-                                <option>Copper</option>
-                                <option>Aluminium</option>
+                                <option value="Copper">Copper</option>
+                                <option value="Aluminium">Aluminium</option>
                             </select>
                         </div>
                         <div class="form-group-inline">
@@ -206,8 +206,8 @@
                         <div class="form-group-inline">
                             <label for="protection">Protection</label>
                             <select id="protection">
-                                <option>Unarmoured</option>
-                                <option>Armoured</option>
+                                <option value="Unarmoured">Unarmoured</option>
+                                <option value="Armoured">Armoured</option>
                             </select>
                         </div>
                         <div class="form-group-inline">
@@ -350,8 +350,8 @@
                 <tr>
                     <th>Power Input (kW)</th>
                     <th>Voltage</th>
-                    <th>Power Factor</th>
                     <th>Result</th>
+                    <th>Final Length</th>
                     <th></th>
                 </tr>
             </thead>
@@ -381,21 +381,4 @@
     </div> -->
     
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script>
-        function toggleProtection() {
-            var peMocSelect = document.getElementById("peMoc");
-            var protectionSelect = document.getElementById("protection");
-
-            if (peMocSelect.value === "copper") {
-                protectionSelect.querySelector("option[value='unarmoured']").style.display = "block";
-                protectionSelect.querySelector("option[value='armoured']").style.display = "none";
-            } else if (peMocSelect.value === "aluminium") {
-                protectionSelect.querySelector("option[value='unarmoured']").style.display = "none";
-                protectionSelect.querySelector("option[value='armoured']").style.display = "block";
-            }
-        }
-
-        // Gọi hàm toggleProtection một lần khi trang được tải để ẩn hoặc hiển thị các tùy chọn mặc định
-        toggleProtection();
-    </script>
 {% endblock %}

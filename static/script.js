@@ -259,6 +259,16 @@ document.addEventListener("DOMContentLoaded", function() {
     function CurrentCalculate(power, voltage, powerFactor) {
         return (power * 1000) / (1.733 * voltage * powerFactor)
     }
+
+    //---step 8.2
+    function TVD(a, current, finalLength) {
+        return a * 0.01 * (current * 1.5) * finalLength;
+    }
+
+    function TDVpercent(TVD, PtoPvoltage) {
+        return (TVD * 100) / PtoPvoltage;
+    }
+     
     // Calculate Button
     var calculateButton = document.getElementById("calculateButton");
     calculateButton.addEventListener("click", function() {
@@ -270,10 +280,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var selectedUnit = unitSelect.options[unitSelect.selectedIndex].text;
 
         //get voltage values
-        var selectedVoltage = document.getElementById("voltage").value;
+        var selectedVoltage = parseFloat(document.getElementById("voltage").value);
 
         //get powerFactor
-        var powerFactor = document.getElementById("powerFactor").value;
+        var powerFactor = parseFloat(document.getElementById("powerFactor").value);
 
         var currentSelect = document.getElementById("current1");
         var selectedCurrent = currentSelect.options[currentSelect.selectedIndex].text;
@@ -296,6 +306,53 @@ document.addEventListener("DOMContentLoaded", function() {
             var I = parseFloat((CurrentCalculate(powerInKW, selectedVoltage, powerFactor)).toFixed(4));
             // alert("Output: " + I);
         }
+
+        //---------------------------step 7 ----------------------------
+        var current = parseFloat(document.getElementById('current').value);
+
+        var checkCurrent = current * 1.5;
+
+        var selectTypeSystem = document.getElementById('typeSystem').value;
+
+        var selectNoOfCore = document.getElementById('cores').value;
+
+        // if (selectTypeSystem == "1Ph+N") {
+        //     if(selectNoOfCore == "Single core") {
+
+        //     }
+        // }
+        
+        // Gọi Json
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'static/cabledata.json', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    console.log(data);
+                } else {
+                    console.error('There was a problem with the request.');
+                }
+            }
+        };
+        xhr.send();
+
+        //--------------------------------------------------------------
+
+        // --------------------------step 8-----------------------------
+        var AtoB = parseFloat(document.getElementById('fromAtoB').value);
+        var heightTray = parseFloat(document.getElementById('heightTray').value);
+        var heightCabinet= parseFloat(document.getElementById('heightCabinet').value);
+        var totalDistance = parseFloat(document.getElementById('totalDistance').value);
+        var elevationChange = parseFloat(document.getElementById('elevationChange').value);
+        var horizontalDistanceTrayCabinet = parseFloat(document.getElementById('horizontalDistanceTrayCabinet').value);
+        var heightDistanceTrayEquipment = parseFloat(document.getElementById('heightDistanceTrayEquipment').value);
+        var distanceTrayEquipment= parseFloat(document.getElementById('distanceTrayEquipment').value);
+        var cableLengthSpareFactor = parseFloat(document.getElementById('cable-length-spare-factor').value);
+        
+        var finalLength = AtoB + heightTray + heightCabinet + totalDistance + elevationChange + horizontalDistanceTrayCabinet + heightDistanceTrayEquipment + distanceTrayEquipment + ((AtoB + heightTray + heightCabinet + totalDistance + elevationChange + horizontalDistanceTrayCabinet + heightDistanceTrayEquipment + distanceTrayEquipment * cableLengthSpareFactor) / 100);
+
+        //--------------------------------------------------------------
         
         // --------------------- Table result -------------------------
         var table = document.getElementById('resultTable');
@@ -315,13 +372,13 @@ document.addEventListener("DOMContentLoaded", function() {
         voltageCell.textContent = selectedVoltage;
         newRow.appendChild(voltageCell);
 
-        var powerFactorCell = document.createElement('td');
-        powerFactorCell.textContent = powerFactor;
-        newRow.appendChild(powerFactorCell);
-
         var resultCell = document.createElement('td');
         resultCell.textContent = I.toFixed(2);
         newRow.appendChild(resultCell);
+
+        var FinalLengthCell = document.createElement('td');
+        FinalLengthCell.textContent = finalLength;
+        newRow.appendChild(FinalLengthCell);
 
         // Tạo một ô mới cho nút xóa
         var deleteCell = document.createElement('td');
@@ -341,51 +398,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         tableBody.appendChild(newRow);
         //-----------------------------------------------------------------------
-
-        //---------------------table showcase -----------------------------------
-        // var NameAreaPlantZone = document.getElementById('areaPlantZoneName').value;
-        // var areaPlantZoneNumber = document.getElementById('areaPlantZoneNumber').value;
-        // var cableTraySegment = document.getElementById('cableTraySegment').value;
-        // var equipmentName = document.getElementById('equipmentName').value;
-        // var equipmentTag = document.getElementById('equipmentTag').value;
-        // var quantity = document.getElementById('quantity').value;
-
-        // var table2 = document.getElementById('resultTable2');
-        // var tableBody2 = table2.querySelector('tbody');
-        // if(!tableBody2) {
-        //     tableBody2= document.createElement('tbody');
-        //     table2.appendChild(tableBody2);
-        // }
-
-        // var newRow = document.createElement('tr');
-
-        // var NameAreaPlantZoneCell = document.createElement('td');
-        // NameAreaPlantZoneCell.textContent = NameAreaPlantZone;
-        // newRow.appendChild(NameAreaPlantZoneCell);
-
-        // var areaPlantZoneNumberCell = document.createElement('td');
-        // areaPlantZoneNumberCell.textContent = areaPlantZoneNumber;
-        // newRow.appendChild(areaPlantZoneNumberCell);
-
-        // var cableTraySegmentCell = document.createElement('td');
-        // cableTraySegmentCell.textContent = cableTraySegment;
-        // newRow.appendChild(cableTraySegmentCell);
-
-        // var equipmentNameCell = document.createElement('td');
-        // equipmentNameCell.textContent = equipmentName;
-        // newRow.appendChild(equipmentNameCell);
-
-        // var equipmentTagCell = document.createElement('td');
-        // equipmentTagCell.textContent = equipmentTag;
-        // newRow.appendChild(equipmentTagCell);
-
-        // var quantityCell = document.createElement('td');
-        // quantityCell.textContent = quantity;
-        // newRow.appendChild(quantityCell);
-        
-
-        // tableBody2.appendChild(newRow);
-
     });
 
     // Reset Button
@@ -463,3 +475,4 @@ function selectSupportType(supportType) {
 }
 
 //flow1
+
