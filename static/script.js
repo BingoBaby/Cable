@@ -323,19 +323,132 @@ document.addEventListener("DOMContentLoaded", function() {
         // }
         
         // Gọi Json
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'static/cabledata.json', true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    var data = JSON.parse(xhr.responseText);
-                    console.log(data);
-                } else {
-                    console.error('There was a problem with the request.');
+        // Sử dụng Fetch API để tải file JSON
+        fetch('static/DataCable.json')
+            .then(response => {
+                // Kiểm tra xem request có thành công không
+                if (!response.ok) {
+                throw new Error('Network response was not ok');
                 }
-            }
-        };
-        xhr.send();
+                // Parse JSON từ response
+                return response.json();
+            })
+            .then(jsonData => {
+                // Tạo danh sách các dây dựa trên Material_protection
+                const CuUA = [];
+                const CuA = [];
+                const AlUA = [];
+
+                jsonData.forEach(cable => {
+                    switch (cable.Material_protection) {
+                        case 1:
+                            CuUA.push(cable);
+                            break;
+                        case 2:
+                            CuA.push(cable);
+                            break;
+                        case 3:
+                            AlUA.push(cable);
+                            break;
+                        default:
+                            console.error('Unknown Material_protection value:', cable.Material_protection);
+                    }
+                });
+
+                // Kiểm tra kết quả
+                // console.log('CuUA:', CuUA);
+                // console.log('CuA:', CuA);
+                // console.log('AlUA:', AlUA);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+
+            // cablemethoddata.json
+            fetch('static/cablemethoddata.json')
+            .then(response => {
+                // Kiểm tra xem request có thành công không
+                if (!response.ok) {
+                throw new Error('Network response was not ok');
+                }
+                // Parse JSON từ response
+                return response.json();
+            })
+            .then(jsonData => {
+                // Tạo danh sách các dây dựa trên Material_protection
+                const methodId1 = [];
+                const methodId2 = [];
+                const methodId3 = [];
+                const methodId4 = [];
+                const methodId5 = [];
+                const methodId6 = [];
+                const methodId7 = [];
+                const methodId8 = [];
+                const methodId9 = [];
+
+                jsonData.forEach(method => {
+                    switch (method.Cable_method_id) {
+                        case 1:
+                            methodId1.push(method);
+                            break;
+                        case 2:
+                            methodId2.push(method);
+                            break;
+                        case 3:
+                            methodId3.push(method);
+                            break;
+                        case 4:
+                            methodId4.push(method);
+                            break;
+                        case 5:
+                            methodId5.push(method);
+                            break;
+                        case 6:
+                            methodId6.push(method);
+                            break;
+                        case 7:
+                            methodId7.push(method);
+                        case 8:
+                            methodId8.push(method);
+                        case 9:
+                            methodId9.push(method);
+                            break;
+                        default:
+                            console.error('Unknown Material_protection value:', cable.Material_protection);
+                    }
+                });
+
+                // Kiểm tra kết quả
+                // console.log('methodId1:', methodId1);
+                // console.log('methodId2:', methodId2);
+                // console.log('methodId3:', methodId3);
+                // console.log('methodId4:', methodId4);
+                // console.log('methodId5:', methodId5);
+                // console.log('methodId6:', methodId6);
+                // console.log('methodId7:', methodId7);
+                // console.log('methodId8:', methodId8);
+                // console.log('methodId9:', methodId9);
+                
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+
+        var MethodOfInstallation = document.getElementById('installation').value;
+        var conductorsMoC = document.getElementById('conductors').value;
+
+        if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
+            
+        } 
+
+        if(MethodOfInstallation== "air" && conductorsMoC == "Aluminium") {
+
+        } 
+
+        if(MethodOfInstallation == "direct-in-ground" || MethodOfInstallation == "underground-duct" && conductorsMoC == "Copper") {
+
+        }
+
 
         //--------------------------------------------------------------
 
