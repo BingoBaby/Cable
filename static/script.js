@@ -316,11 +316,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var selectNoOfCore = document.getElementById('cores').value;
 
-        // if (selectTypeSystem == "1Ph+N") {
-        //     if(selectNoOfCore == "Single core") {
-
-        //     }
-        // }
         
         // Gọi Json
         // Sử dụng Fetch API để tải file JSON
@@ -365,6 +360,16 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             // cablemethoddata.json
+            let method1;
+            let methodId2;
+            let methodId3;
+            let methodId4;
+            let methodId5;
+            let methodId6;
+            let methodId7;
+            let methodId8;
+            let methodId9;
+
             fetch('static/cablemethoddata.json')
             .then(response => {
                 // Kiểm tra xem request có thành công không
@@ -389,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 jsonData.forEach(method => {
                     switch (method.Cable_method_id) {
                         case 1:
-                            methodId1.push(method);
+                            method1 = methodId1.push(method);
                             break;
                         case 2:
                             methodId2.push(method);
@@ -419,36 +424,56 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
 
                 // Kiểm tra kết quả
-                // console.log('methodId1:', methodId1);
-                // console.log('methodId2:', methodId2);
-                // console.log('methodId3:', methodId3);
-                // console.log('methodId4:', methodId4);
-                // console.log('methodId5:', methodId5);
-                // console.log('methodId6:', methodId6);
-                // console.log('methodId7:', methodId7);
-                // console.log('methodId8:', methodId8);
-                // console.log('methodId9:', methodId9);
-                
+                methodId1.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId2.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId3.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId4.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId5.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId6.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId7.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId8.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                methodId9.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+
+                console.log(CalculateStep7(MethodOfInstallation, conductorsMoC, checkCurrent, methodId1, selectTypeSystem, selectNoOfCore));
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
             });
 
+        function Show(data){
+            console.log(data);
+        }
         var MethodOfInstallation = document.getElementById('installation').value;
         var conductorsMoC = document.getElementById('conductors').value;
+        let newCurrent = null;
+        function CalculateStep7(MethodOfInstallation, conductorsMoC, n, data, selectTypeSystem, selectNoOfCore) {
+            if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
+                if (selectTypeSystem == "1Ph+N") {
+                    if(selectNoOfCore == "single") {
+                        for (i = 0; i <= data.length; i++) {
+                            const currentValue = [i].Cable_value_current;
 
-        if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
-            
-        } 
+                            if(currentValue > n) {
+                                newCurrent = currentValue;
+                                break;
+                            }
+                        }
 
-        if(MethodOfInstallation== "air" && conductorsMoC == "Aluminium") {
-
-        } 
-
-        if(MethodOfInstallation == "direct-in-ground" || MethodOfInstallation == "underground-duct" && conductorsMoC == "Copper") {
-
+                        return newCurrent;
+                    }
+                }
+            } 
+    
+            if(MethodOfInstallation== "air" && conductorsMoC == "Aluminium") {
+    
+            } 
+    
+            if(MethodOfInstallation == "direct-in-ground" || MethodOfInstallation == "underground-duct" && conductorsMoC == "Copper") {
+    
+            }
         }
 
+        // CalculateStep7(MethodOfInstallation, conductorsMoC);
 
         //--------------------------------------------------------------
 
