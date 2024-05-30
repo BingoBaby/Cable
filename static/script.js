@@ -261,11 +261,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //---step 8.2
-    function TVD(a, current, finalLength) {
-        return a * 0.01 * (current * 1.5) * finalLength;
+    function TVD(vd, current, finalLength) {
+        return vd * 0.001 * (current * 1.5) * finalLength;
     }
 
-    function TDVpercent(TVD, PtoPvoltage) {
+    function TVDpercent(TVD, PtoPvoltage) {
         return (TVD * 100) / PtoPvoltage;
     }
      
@@ -316,6 +316,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var selectNoOfCore = document.getElementById('cores').value;
 
+        var typeOfInsulation = document.getElementById('insulation').value;
+
         
         // Gọi Json
         // Sử dụng Fetch API để tải file JSON
@@ -354,112 +356,126 @@ document.addEventListener("DOMContentLoaded", function() {
                 // console.log('CuUA:', CuUA);
                 // console.log('CuA:', CuA);
                 // console.log('AlUA:', AlUA);
+                fetch('static/cablemethoddata.json')
+                    .then(response => {
+                        // Kiểm tra xem request có thành công không
+                        if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                        }
+                        // Parse JSON từ response
+                        return response.json();
+                    })
+                    .then(jsonData => {
+                        // Tạo danh sách các dây dựa trên Material_protection
+                        methodId1 = [];
+                        methodId2 = [];
+                        methodId3 = [];
+                        methodId4 = [];
+                        methodId5 = [];
+                        methodId6 = [];
+                        methodId7 = [];
+                        methodId8 = [];
+                        methodId9 = [];
+
+                        jsonData.forEach(method => {
+                            switch (method.Cable_method_id) {
+                                case 1:
+                                    methodId1.push(method);
+                                    break;
+                                case 2:
+                                    methodId2.push(method);
+                                    break;
+                                case 3:
+                                    methodId3.push(method);
+                                    break;
+                                case 4:
+                                    methodId4.push(method);
+                                    break;
+                                case 5:
+                                    methodId5.push(method);
+                                    break;
+                                case 6:
+                                    methodId6.push(method);
+                                    break;
+                                case 7:
+                                    methodId7.push(method);
+                                case 8:
+                                    methodId8.push(method);
+                                case 9:
+                                    methodId9.push(method);
+                                    break;
+                                default:
+                                    console.error('Unknown Material_protection value:', cable.Material_protection);
+                            }
+                        });
+
+                        // Kiểm tra kết quả
+                        methodId1.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId2.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId3.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId4.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId5.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId6.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId7.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId8.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+                        methodId9.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
+
+                        let step7111 = CalculateStep7(MethodOfInstallation, conductorsMoC, checkCurrent, methodId1, selectTypeSystem, selectNoOfCore);
+                        // console.log(methodId1[4]);
+                        let step7116 = step7111[0] * publicCorrectFactor;
+                
+                        console.log(publicCorrectFactor);
+                        console.log(step7116);
+                        // console.log(nameCable);
+                        let vd = parseFloat(step7111[1]);
+                        console.log(finalLength);
+                        let TVDresult = TVD(vd, current, finalLength);
+                        console.log("TVD: ", TVDresult);
+                        let TVDpercentResult = (TVDpercent(TVDresult, selectedVoltage).toFixed(2));
+                        console.log("TVDpercent: ", TVDpercentResult);
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                    });
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
             });
 
             // cablemethoddata.json
-            let method1;
-            let methodId2;
-            let methodId3;
-            let methodId4;
-            let methodId5;
-            let methodId6;
-            let methodId7;
-            let methodId8;
-            let methodId9;
+        // let methodId1;
+        // let methodId2;
+        // let methodId3;
+        // let methodId4;
+        // let methodId5;
+        // let methodId6;
+        // let methodId7;
+        // let methodId8;
+        // let methodId9;
 
-            fetch('static/cablemethoddata.json')
-            .then(response => {
-                // Kiểm tra xem request có thành công không
-                if (!response.ok) {
-                throw new Error('Network response was not ok');
-                }
-                // Parse JSON từ response
-                return response.json();
-            })
-            .then(jsonData => {
-                // Tạo danh sách các dây dựa trên Material_protection
-                const methodId1 = [];
-                const methodId2 = [];
-                const methodId3 = [];
-                const methodId4 = [];
-                const methodId5 = [];
-                const methodId6 = [];
-                const methodId7 = [];
-                const methodId8 = [];
-                const methodId9 = [];
+        
+        // function Show(MethodOfInstallation){
+        //     return MethodOfInstallation
+        // }
 
-                jsonData.forEach(method => {
-                    switch (method.Cable_method_id) {
-                        case 1:
-                            method1 = methodId1.push(method);
-                            break;
-                        case 2:
-                            methodId2.push(method);
-                            break;
-                        case 3:
-                            methodId3.push(method);
-                            break;
-                        case 4:
-                            methodId4.push(method);
-                            break;
-                        case 5:
-                            methodId5.push(method);
-                            break;
-                        case 6:
-                            methodId6.push(method);
-                            break;
-                        case 7:
-                            methodId7.push(method);
-                        case 8:
-                            methodId8.push(method);
-                        case 9:
-                            methodId9.push(method);
-                            break;
-                        default:
-                            console.error('Unknown Material_protection value:', cable.Material_protection);
-                    }
-                });
-
-                // Kiểm tra kết quả
-                methodId1.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId2.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId3.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId4.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId5.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId6.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId7.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId8.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-                methodId9.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
-
-                console.log(CalculateStep7(MethodOfInstallation, conductorsMoC, checkCurrent, methodId1, selectTypeSystem, selectNoOfCore));
-            })
-            .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-            });
-
-        function Show(data){
-            console.log(data);
-        }
         var MethodOfInstallation = document.getElementById('installation').value;
         var conductorsMoC = document.getElementById('conductors').value;
         let newCurrent = null;
+        let VoltageDrop = null;
         function CalculateStep7(MethodOfInstallation, conductorsMoC, n, data, selectTypeSystem, selectNoOfCore) {
             if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
                 if (selectTypeSystem == "1Ph+N") {
                     if(selectNoOfCore == "single") {
                         for (i = 0; i <= data.length; i++) {
-                            const currentValue = [i].Cable_value_current;
-
+                            var currentValue = data[i].Cable_value_current;
                             if(currentValue > n) {
                                 newCurrent = currentValue;
+                                VoltageDrop = data[i].Cable_value_voltage_drop;
                                 break;
                             }
                         }
 
-                        return newCurrent;
+                        return [newCurrent, VoltageDrop];
                     }
                 }
             } 
@@ -473,10 +489,52 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        // CalculateStep7(MethodOfInstallation, conductorsMoC);
+        //--------------------------test------------------------------------
+        let jsonURL = '/static/maxtemp.json'
 
-        //--------------------------------------------------------------
+        var temperature = document.getElementById('temperature').value;
 
+        function findWhatIneed (data, n, m) {
+            let factor = null;
+            for(let key in data.ambientTemperatureCorrectionFactors) {
+                let range = key.split('-').map(Number);
+                if(n >= range[0] && range[1]) {
+                    if(m == 'PVC') {
+                        factor = data.ambientTemperatureCorrectionFactors[key]['75'];
+                    } else if(m == 'XLPE') {
+                        factor = data.ambientTemperatureCorrectionFactors[key]['90'];
+                    } else {
+                        factor = data.ambientTemperatureCorrectionFactors[key]['60'];
+                    }
+                }
+            }
+            return factor;            
+        }
+
+        let publicCorrectFactor;
+
+        fetch(jsonURL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Không thể lấy dữ liệu từ URL');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const n = temperature; // Giá trị của n
+                const m = typeOfInsulation; // Loại m
+
+                const correctionFactor = findWhatIneed(data, n, m);
+                if (correctionFactor !== null) {
+                    // console.log(correctionFactor);
+                    publicCorrectFactor = correctionFactor;
+                } else {
+                    console.log('Không tìm thấy correction factor cho giá trị n và m đã cho.');
+                }
+            })
+            .catch(error => console.error('Đã xảy ra lỗi:', error));
+
+        // console.log(publicCorrectFactor);
         // --------------------------step 8-----------------------------
         var AtoB = parseFloat(document.getElementById('fromAtoB').value);
         var heightTray = parseFloat(document.getElementById('heightTray').value);
@@ -489,7 +547,16 @@ document.addEventListener("DOMContentLoaded", function() {
         var cableLengthSpareFactor = parseFloat(document.getElementById('cable-length-spare-factor').value);
         
         var finalLength = AtoB + heightTray + heightCabinet + totalDistance + elevationChange + horizontalDistanceTrayCabinet + heightDistanceTrayEquipment + distanceTrayEquipment + ((AtoB + heightTray + heightCabinet + totalDistance + elevationChange + horizontalDistanceTrayCabinet + heightDistanceTrayEquipment + distanceTrayEquipment * cableLengthSpareFactor) / 100);
-
+        // console.log(AtoB);
+        // console.log(heightTray);
+        // console.log(heightCabinet);
+        // console.log(totalDistance);
+        // console.log(elevationChange);
+        // console.log(horizontalDistanceTrayCabinet);
+        // console.log(heightDistanceTrayEquipment);
+        // console.log(distanceTrayEquipment);
+        // console.log(cableLengthSpareFactor);
+        // console.log(finalLength);
         //--------------------------------------------------------------
         
         // --------------------- Table result -------------------------
