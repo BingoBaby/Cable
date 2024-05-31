@@ -318,7 +318,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var typeOfInsulation = document.getElementById('insulation').value;
 
-        
+        var peMOC = document.getElementById('peMoc').value;
+        var voltageRating = document.getElementById('voltageRating').value;
         // Gọi Json
         // Sử dụng Fetch API để tải file JSON
         fetch('static/DataCable.json')
@@ -420,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         methodId8.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
                         methodId9.sort((a, b) => a.Cable_value_current - b.Cable_value_current);
 
-                        let step7111 = CalculateStep7(MethodOfInstallation, conductorsMoC, checkCurrent, methodId1, selectTypeSystem, selectNoOfCore);
+                        let step7111 = CalculateStep7(MethodOfInstallation, conductorsMoC, checkCurrent, selectTypeSystem, selectNoOfCore);
                         // console.log(methodId1[4]);
                         let step7116 = step7111[0] * publicCorrectFactor;
                 
@@ -433,6 +434,123 @@ document.addEventListener("DOMContentLoaded", function() {
                         console.log("TVD: ", TVDresult);
                         let TVDpercentResult = (TVDpercent(TVDresult, selectedVoltage).toFixed(2));
                         console.log("TVDpercent: ", TVDpercentResult);
+                        console.log("Current new: ", step7111[0]);
+
+                        //---------------table------------------
+                        var table = document.getElementById('resultTable');
+                        var tableBody = table.querySelector('tbody');
+                        if(!tableBody) {
+                            tableBody= document.createElement('tbody');
+                            table.appendChild(tableBody);
+                        }
+
+                        var newRow = document.createElement('tr');
+
+                        var powerCell = document.createElement('td');
+                        powerCell.textContent = powerInKW;
+                        newRow.appendChild(powerCell);
+
+                        var PeMocCell = document.createElement('td');
+                        PeMocCell.textContent = peMOC;
+                        newRow.appendChild(PeMocCell);
+
+                        var voltageCell = document.createElement('td');
+                        voltageCell.textContent = selectedVoltage;
+                        newRow.appendChild(voltageCell);
+
+                        var voltageRatingCell = document.createElement('td');
+                        voltageRatingCell.textContent = voltageRating;
+                        newRow.appendChild(voltageRatingCell);
+
+                        var insulationCell = document.createElement('td');
+                        insulationCell.textContent = typeOfInsulation;
+                        newRow.appendChild(insulationCell);
+
+                        var powerFactorCell = document.createElement('td');
+                        powerFactorCell.textContent = powerFactor;
+                        newRow.appendChild(powerFactorCell);
+
+                        var VoltageDropCell = document.createElement('td');
+                        VoltageDropCell.textContent = step7111[1];
+                        newRow.appendChild(VoltageDropCell);
+
+                        var FinalLengthCell = document.createElement('td');
+                        FinalLengthCell.textContent = finalLength;
+                        newRow.appendChild(FinalLengthCell);
+
+                        var deleteCell = document.createElement('td');
+                        // Tạo nút xóa
+                        var deleteButton = document.createElement('button');
+                        deleteButton.textContent = 'X';
+                        deleteButton.classList.add('delete-button'); // Thêm lớp cho nút xóa để dễ dàng chọn bằng JavaScript
+                        // Gắn sự kiện click cho nút xóa
+                        deleteButton.addEventListener('click', function() {
+                            // Xóa hàng khi nút xóa được nhấp vào
+                            newRow.remove();
+                        });
+                
+                        deleteCell.appendChild(deleteButton);
+                        // Thêm ô chứa nút xóa vào hàng mới
+                        newRow.appendChild(deleteCell);
+                
+                        tableBody.appendChild(newRow);
+                        //--------------------------------------
+                        document.getElementById('exportButton').addEventListener('click', function() {
+                            // Tạo một Workbook mới
+                            var wb = XLSX.utils.book_new();
+                            
+                            // Tạo một mảng chứa dữ liệu từ bảng HTML
+                            var data = [];
+                            //Thêm 4 dòng trống trong excel
+                            for (var i = 0; i < 4; i++) {
+                                data.push([""]); // Thêm một mảng rỗng vào mảng dữ liệu
+                            }
+
+                            var table = document.getElementById('resultTable');
+                            for (var i = 0; i < table.rows.length; i++) {
+                                var rowData = [];
+                                for (var j = 0; j < table.rows[i].cells.length - 1; j++) { //không lấy cột cuối trong table html
+                                    rowData.push(table.rows[i].cells[j].textContent);
+                                }
+                                data.push(rowData);
+                            }
+                        
+                            // Tạo một Worksheet từ mảng dữ liệu
+                            var ws = XLSX.utils.aoa_to_sheet(data);
+                        
+                            // Điều chỉnh độ rộng của các cột dựa trên nội dung
+                            var range = XLSX.utils.decode_range(ws['!ref']);
+                            for (var C = range.s.c; C <= range.e.c; ++C) {
+                                var maxCellLength = 0;
+                                for (var R = range.s.r; R <= range.e.r; ++R) {
+                                    var cellAddress = {c: C, r: R};
+                                    var cellRef = XLSX.utils.encode_cell(cellAddress);
+                                    if (!ws[cellRef]) continue;
+                                    var cellLength = ws[cellRef].v.toString().length;
+                                    if (cellLength > maxCellLength) maxCellLength = cellLength;
+                                }
+                                ws['!cols'] = ws['!cols'] || [];
+                                ws['!cols'][C] = {wch: maxCellLength + 2}; // Tăng kích thước một chút để tránh tràn nội dung
+                            }
+                        
+                            // Căn giữa các giá trị trong các ô
+                            var range = XLSX.utils.decode_range(ws['!ref']);
+                            for (var R = range.s.r; R <= range.e.r; ++R) {
+                                for (var C = range.s.c; C <= range.e.c; ++C) {
+                                    var cellAddress = {c: C, r: R};
+                                    var cellRef = XLSX.utils.encode_cell(cellAddress);
+                                    if (!ws[cellRef]) continue;
+                                    ws[cellRef].s = {alignment: {horizontal: 'center', vertical: 'center', wrapText: true}};
+                                }
+                            }
+                        
+                            // Thêm Worksheet vào Workbook với tên là "Data"
+                            XLSX.utils.book_append_sheet(wb, ws, "Data");
+                        
+                            // Xuất Workbook thành file Excel
+                            XLSX.writeFile(wb, 'data.xlsx');
+                        });                                            
+                        
                     })
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
@@ -461,16 +579,16 @@ document.addEventListener("DOMContentLoaded", function() {
         var MethodOfInstallation = document.getElementById('installation').value;
         var conductorsMoC = document.getElementById('conductors').value;
         let newCurrent = null;
-        let VoltageDrop = null;
-        function CalculateStep7(MethodOfInstallation, conductorsMoC, n, data, selectTypeSystem, selectNoOfCore) {
+        let VoltageDrop = null; 
+        function CalculateStep7(MethodOfInstallation, conductorsMoC, n, selectTypeSystem, selectNoOfCore) {
             if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
                 if (selectTypeSystem == "1Ph+N") {
                     if(selectNoOfCore == "single") {
-                        for (i = 0; i <= data.length; i++) {
-                            var currentValue = data[i].Cable_value_current;
+                        for (i = 0; i <= methodId1.length; i++) {
+                            var currentValue = methodId1[i].Cable_value_current;
                             if(currentValue > n) {
                                 newCurrent = currentValue;
-                                VoltageDrop = data[i].Cable_value_voltage_drop;
+                                VoltageDrop = methodId1[i].Cable_value_voltage_drop;
                                 break;
                             }
                         }
@@ -498,7 +616,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let factor = null;
             for(let key in data.ambientTemperatureCorrectionFactors) {
                 let range = key.split('-').map(Number);
-                if(n >= range[0] && range[1]) {
+                if(n >= range[0] && n <= range[1]) {
                     if(m == 'PVC') {
                         factor = data.ambientTemperatureCorrectionFactors[key]['75'];
                     } else if(m == 'XLPE') {
@@ -558,50 +676,11 @@ document.addEventListener("DOMContentLoaded", function() {
         // console.log(cableLengthSpareFactor);
         // console.log(finalLength);
         //--------------------------------------------------------------
-        
+        var selectNumberCore = document.getElementById('air-options').value;
+
+        console.log(selectNumberCore);
         // --------------------- Table result -------------------------
-        var table = document.getElementById('resultTable');
-        var tableBody = table.querySelector('tbody');
-        if(!tableBody) {
-            tableBody= document.createElement('tbody');
-            table.appendChild(tableBody);
-        }
-
-        var newRow = document.createElement('tr');
-
-        var powerCell = document.createElement('td');
-        powerCell.textContent = powerInKW;
-        newRow.appendChild(powerCell);
-
-        var voltageCell = document.createElement('td');
-        voltageCell.textContent = selectedVoltage;
-        newRow.appendChild(voltageCell);
-
-        var resultCell = document.createElement('td');
-        resultCell.textContent = I.toFixed(2);
-        newRow.appendChild(resultCell);
-
-        var FinalLengthCell = document.createElement('td');
-        FinalLengthCell.textContent = finalLength;
-        newRow.appendChild(FinalLengthCell);
-
-        // Tạo một ô mới cho nút xóa
-        var deleteCell = document.createElement('td');
-        // Tạo nút xóa
-        var deleteButton = document.createElement('button');
-        deleteButton.textContent = 'X';
-        deleteButton.classList.add('delete-button'); // Thêm lớp cho nút xóa để dễ dàng chọn bằng JavaScript
-        // Gắn sự kiện click cho nút xóa
-        deleteButton.addEventListener('click', function() {
-            // Xóa hàng khi nút xóa được nhấp vào
-            newRow.remove();
-        });
-
-        deleteCell.appendChild(deleteButton);
-        // Thêm ô chứa nút xóa vào hàng mới
-        newRow.appendChild(deleteCell);
-
-        tableBody.appendChild(newRow);
+        
         //-----------------------------------------------------------------------
     });
 
@@ -679,5 +758,17 @@ function selectSupportType(supportType) {
     changeSupportType(); // Cập nhật hiển thị ảnh và viền
 }
 
+//------------------ Hide F12, right click ---------------------
+// document.addEventListener("keydown", function (event){
+//     if (event.ctrlKey){
+//        event.preventDefault();
+//     }
+//     if(event.keyCode == 123){
+//        event.preventDefault();
+//     }
+// });
+
+// document.addEventListener("contextmenu",event => event.preventDefault());
+//---------------------------------------------------------------
 //flow1
 

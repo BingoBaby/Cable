@@ -217,8 +217,8 @@
                         <div class="form-group-inline">
                             <label for="voltageRating">Cable Voltage Rating</label>
                             <select id="voltageRating">
-                                <option>0.6/1 kV</option>
-                                <option>300/500 V</option>
+                                <option value="0.6/1 kV">0.6/1 kV</option>
+                                <option value="300/500 V">300/500 V</option>
                             </select>
                         </div>
                         <div class="form-group-inline">
@@ -348,10 +348,14 @@
         <table id="resultTable" border="1">
             <thead>
                 <tr>
-                    <th>Power Input (kW)</th>
+                    <th>Power (kW)</th>
+                    <th>PE Moc</th>
                     <th>Voltage</th>
-                    <th>Result</th>
-                    <th>Final Length</th>
+                    <th>Voltage Rating</th>
+                    <th>Insulation</th>
+                    <th>Power Factor</th>
+                    <th>Voltage Drop</th>
+                    <th>Total Length of Cable</th>
                     <th></th>
                 </tr>
             </thead>
@@ -360,6 +364,7 @@
             </tbody>
         </table>
     </div>
+    <button type="button" id="exportButton">Export to Excel</button>
 
     <!-- <div id="resultTableDiv2">
         <table id="resultTable2" border="1">
@@ -379,6 +384,6 @@
             </tbody>
         </table>
     </div> -->
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 {% endblock %}
