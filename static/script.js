@@ -333,11 +333,13 @@ document.addEventListener("DOMContentLoaded", function() {
             })
             .then(jsonData => {
                 // Tạo danh sách các dây dựa trên Material_protection
+                const all = [];
                 const CuUA = [];
                 const CuA = [];
                 const AlUA = [];
 
                 jsonData.forEach(cable => {
+                    all.push(cable);
                     switch (cable.Material_protection) {
                         case 1:
                             CuUA.push(cable);
@@ -357,6 +359,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 // console.log('CuUA:', CuUA);
                 // console.log('CuA:', CuA);
                 // console.log('AlUA:', AlUA);
+                // console.log(all);
+                // console.log('CuUA: ', CuUA);
                 fetch('static/cablemethoddata.json')
                     .then(response => {
                         // Kiểm tra xem request có thành công không
@@ -425,17 +429,41 @@ document.addEventListener("DOMContentLoaded", function() {
                         // console.log(methodId1[4]);
                         let step7116 = step7111[0] * publicCorrectFactor;
                 
-                        console.log(publicCorrectFactor);
-                        console.log(step7116);
+                        // console.log(publicCorrectFactor);
+                        console.log(step7111[0]);
                         // console.log(nameCable);
                         let vd = parseFloat(step7111[1]);
-                        console.log(finalLength);
+                        // console.log(finalLength);
                         let TVDresult = TVD(vd, current, finalLength);
-                        console.log("TVD: ", TVDresult);
+                        // console.log("TVD: ", TVDresult);
                         let TVDpercentResult = (TVDpercent(TVDresult, selectedVoltage).toFixed(2));
-                        console.log("TVDpercent: ", TVDpercentResult);
-                        console.log("Current new: ", step7111[0]);
+                        // console.log("TVDpercent: ", TVDpercentResult);
+                        // console.log("Current new: ", step7111[0]);
 
+                        let cableId = null;
+                        for(const item of methodId1) {
+                            if(item.Cable_value_current == step7111[0]) {
+                                cableId = item.Cable_id;
+                                break;
+                            }
+                        }
+
+                        console.log(cableId);
+
+                        let cableName = null;
+                        if(cableId != null) {
+                            for(const item of all) {
+                                if(item.Cable_id == cableId) {
+                                    cableName = item.Cable_name;
+                                    break;
+                                }
+                            }
+                        }
+
+                        console.log("Cable name: ", cableName);
+
+                        let CablePE = cableName.split(' 0.6/1 kV')[0];
+                        console.log("CablePE: ", CablePE);
                         //---------------table------------------
                         var table = document.getElementById('resultTable');
                         var tableBody = table.querySelector('tbody');
@@ -454,13 +482,13 @@ document.addEventListener("DOMContentLoaded", function() {
                         PeMocCell.textContent = peMOC;
                         newRow.appendChild(PeMocCell);
 
-                        var voltageCell = document.createElement('td');
-                        voltageCell.textContent = selectedVoltage;
-                        newRow.appendChild(voltageCell);
+                        var cableNameCell = document.createElement('td');
+                        cableNameCell.textContent = cableName;
+                        newRow.appendChild(cableNameCell);
 
-                        var voltageRatingCell = document.createElement('td');
-                        voltageRatingCell.textContent = voltageRating;
-                        newRow.appendChild(voltageRatingCell);
+                        var cablePECell = document.createElement('td');
+                        cablePECell.textContent = CablePE;
+                        newRow.appendChild(cablePECell);
 
                         var insulationCell = document.createElement('td');
                         insulationCell.textContent = typeOfInsulation;
