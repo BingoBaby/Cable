@@ -612,7 +612,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
                 if (selectTypeSystem == "1Ph+N") {
                     if(selectNoOfCore == "single") {
-                        for (i = 0; i <= methodId1.length; i++) {
+                        for (const i = 0; i <= methodId1.length; i++) {
                             var currentValue = methodId1[i].Cable_value_current;
                             if(currentValue > n) {
                                 newCurrent = currentValue;
