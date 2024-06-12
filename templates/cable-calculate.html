@@ -288,8 +288,8 @@
                     <label for="current">Current</label>
                     <input type="text" id="current">
                     <select name="current" id="current1">
-                        <option label="Input" selected="selected">Input</option>
                         <option label="Calculate" selected="selected">Calculate</option>
+                        <option label="Input" selected="selected">Input</option>
                     </select>
                 </div>
             </form>
@@ -387,4 +387,5 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script> -->
     <script src="static/xlsx.full.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='cable_cal.js') }}"></script>
 {% endblock %}
