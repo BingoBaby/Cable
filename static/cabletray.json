@@ -1,0 +1,3215 @@
+[
+    {
+        "cable_tray_id": 1,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 2,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 3,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 4,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 5,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 6,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 7,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 8,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 9,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 10,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 11,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 12,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 13,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 14,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x2 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 15,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 16,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 17,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 18,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 19,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 20,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 21,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 22,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 23,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 24,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 25,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 26,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 27,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 28,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x3 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 29,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 30,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 31,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 32,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 33,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 34,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x1.5 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 35,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x2 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 36,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x2 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 37,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x2 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 38,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x2 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 39,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x2 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 40,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x2 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 41,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 42,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 43,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 44,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 45,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 46,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x2.5 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 47,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x3 mm GI Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 48,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x3 mm GI Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 49,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x3 mm GI Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 50,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x3 mm GI Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 51,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x3 mm GI Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 52,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x3 mm GI Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 53,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 54,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 55,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 56,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 57,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 58,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 59,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x1.5 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 60,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x2 mm GI Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 61,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x2 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 62,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x2 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 63,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x2 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 64,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x2 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 65,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x2 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 66,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x2 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 67,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 68,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 69,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 70,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 71,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 72,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 73,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x2.5 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 74,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x3 mm GI Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 75,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x3 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 76,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x3 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 77,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x3 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 78,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x3 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 79,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x3 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 80,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x3 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 81,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x1.5 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 82,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x1.5 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 83,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x1.5 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 84,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x1.5 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 85,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x1.5 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 86,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x1.5 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 87,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x2 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 88,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x2 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 89,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x2 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 90,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x2 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 91,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x2 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 92,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x2 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 93,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x2.5 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 94,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x2.5 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 95,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x2.5 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 96,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x2.5 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 97,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x2.5 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 98,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x2.5 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 99,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x3 mm GI Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 100,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x3 mm GI Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 101,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x3 mm GI Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 102,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x3 mm GI Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 103,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x3 mm GI Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 104,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x3 mm GI Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 105,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "50x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 106,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 107,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 108,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 109,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 110,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 111,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x50x1.5 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 112,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "50x50x2 mm GI GI Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 113,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x50x2 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 114,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x50x2 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 115,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x50x2 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 116,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x50x2 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 117,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x50x2 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 118,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x50x2 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 119,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "50x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 120,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 121,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 122,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 123,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 124,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 125,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x50x2.5 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 126,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "50x50x3 mm GI GI Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 127,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x50x3 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 128,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x50x3 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 129,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x50x3 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 130,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x50x3 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 131,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x50x3 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 132,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x50x3 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 133,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x100x1.5 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 134,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x100x1.5 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 135,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x100x1.5 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 136,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x100x1.5 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 137,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x100x1.5 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 138,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x100x1.5 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 139,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x100x2 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 140,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x100x2 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 141,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x100x2 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 142,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x100x2 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 143,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x100x2 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 144,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x100x2 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 145,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x100x2.5 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 146,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x100x2.5 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 147,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x100x2.5 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 148,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x100x2.5 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 149,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x100x2.5 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 150,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x100x2.5 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 151,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "100x100x3 mm GI GI Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 152,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "200x100x3 mm GI GI Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 153,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "300x100x3 mm GI GI Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 154,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "400x100x3 mm GI GI Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 155,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "500x100x3 mm GI GI Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 156,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 4,
+        "cable_tray_fullname": "600x100x3 mm GI GI Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 157,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "30x30x4 mm GI Mesh Tray",
+        "cable_tray_width": 30,
+        "cable_tray_height": 30,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 158,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "50x30x4 mm GI Mesh Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 30,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 159,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "100x30x4 mm GI Mesh Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 30,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 160,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "50x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 161,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "100x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 162,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "150x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 150,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 163,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "200x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 164,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "300x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 165,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "400x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 166,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "450x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 450,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 167,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "500x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 168,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "600x54x5 mm GI Mesh Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 169,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "100x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 170,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "150x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 150,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 171,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "200x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 172,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "300x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 173,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "400x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 174,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "450x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 450,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 175,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "500x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 176,
+        "cable_tray_moc_id": 1,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "600x105x5 mm GI Mesh Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 177,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 178,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 179,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 180,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 181,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 182,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 183,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 184,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 185,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 186,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 187,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 188,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 189,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 190,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 191,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 192,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 193,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 194,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 195,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 196,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 197,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 198,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "50x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 199,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 200,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 201,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 202,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 203,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 204,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x50x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 205,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 206,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 207,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 208,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 209,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 210,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x1.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 211,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 212,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 213,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 214,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 215,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 216,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x2 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 217,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 218,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 219,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 220,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 221,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 222,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x2.5 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 223,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "100x100x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 224,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "200x100x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 225,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "300x100x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 226,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "400x100x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 227,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "500x100x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 228,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 1,
+        "cable_tray_fullname": "600x100x3 mm Powder Coated Cable Ladder",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 229,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 230,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 231,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 232,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 233,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 234,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 235,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 236,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 237,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 238,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 239,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 240,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 241,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 242,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 243,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 244,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 245,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 246,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 247,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 248,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 249,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 250,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "50x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 251,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 252,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 253,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 254,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 255,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 256,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x50x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 257,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 258,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 259,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 260,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 261,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 262,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x1.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 263,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 264,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 265,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 266,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 267,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 268,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x2 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 269,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 270,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 271,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 272,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 273,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 274,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x2.5 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 275,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "100x100x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 276,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "200x100x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 277,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "300x100x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 278,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "400x100x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 279,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "500x100x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 280,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 2,
+        "cable_tray_fullname": "600x100x3 mm Powder Coated Cable Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 281,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "50x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 282,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 283,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 284,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 285,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 286,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 287,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x50x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 288,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "50x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 289,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 290,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 291,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 292,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 293,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 294,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x50x2 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 295,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "50x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 296,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 297,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 298,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 299,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 300,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 301,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x50x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 302,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "50x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 303,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 304,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 305,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 306,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 307,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 308,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x50x3 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 309,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x100x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 310,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x100x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 311,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x100x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 312,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x100x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 313,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x100x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 314,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x100x1.5 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 1.5
+    },
+    {
+        "cable_tray_id": 315,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x100x2 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 316,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x100x2 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 317,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x100x2 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 318,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x100x2 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 319,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x100x2 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 320,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x100x2 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 321,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x100x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 322,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x100x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 323,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x100x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 324,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x100x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 325,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x100x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 326,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x100x2.5 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.5
+    },
+    {
+        "cable_tray_id": 327,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "100x100x3 mm Powder Coated Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 328,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "200x100x3 mm Powder Coated Trunking",
+        "cable_tray_width": 200,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 329,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "300x100x3 mm Powder Coated Trunking",
+        "cable_tray_width": 300,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 330,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "400x100x3 mm Powder Coated Trunking",
+        "cable_tray_width": 400,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 331,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "500x100x3 mm Powder Coated Trunking",
+        "cable_tray_width": 500,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 332,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 6,
+        "cable_tray_fullname": "600x100x3 mm Powder Coated Trunking",
+        "cable_tray_width": 600,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 3.0
+    },
+    {
+        "cable_tray_id": 333,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "30x30x4 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 30,
+        "cable_tray_height": 30,
+        "cable_tray_thickness": 4.0
+    },
+    {
+        "cable_tray_id": 334,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "50x30x4 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 30,
+        "cable_tray_thickness": 4.0
+    },
+    {
+        "cable_tray_id": 335,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "100x30x4 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 30,
+        "cable_tray_thickness": 4.0
+    },
+    {
+        "cable_tray_id": 336,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "50x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 50,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 337,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "100x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 338,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "150x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 150,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 339,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "200x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 340,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "300x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 341,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "400x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 342,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "450x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 450,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 343,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "500x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 344,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "600x54x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 54,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 345,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "100x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 100,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 346,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "150x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 150,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 347,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "200x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 200,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 348,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "300x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 300,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 349,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "400x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 400,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 350,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "450x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 450,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 351,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "500x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 500,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 352,
+        "cable_tray_moc_id": 2,
+        "cable_tray_type_id": 3,
+        "cable_tray_fullname": "600x105x5 mm Powder Coated Mesh Tray",
+        "cable_tray_width": 600,
+        "cable_tray_height": 105,
+        "cable_tray_thickness": 5.0
+    },
+    {
+        "cable_tray_id": 353,
+        "cable_tray_moc_id": 3,
+        "cable_tray_type_id": 5,
+        "cable_tray_fullname": "50x50x2 mm PVC Trunking",
+        "cable_tray_width": 50,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 354,
+        "cable_tray_moc_id": 3,
+        "cable_tray_type_id": 5,
+        "cable_tray_fullname": "75x50x2 mm PVC Trunking",
+        "cable_tray_width": 75,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 355,
+        "cable_tray_moc_id": 3,
+        "cable_tray_type_id": 5,
+        "cable_tray_fullname": "100x50x2 mm PVC Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 50,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 356,
+        "cable_tray_moc_id": 3,
+        "cable_tray_type_id": 5,
+        "cable_tray_fullname": "100x100x2 mm PVC Trunking",
+        "cable_tray_width": 100,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    },
+    {
+        "cable_tray_id": 357,
+        "cable_tray_moc_id": 3,
+        "cable_tray_type_id": 5,
+        "cable_tray_fullname": "150x100x2 mm PVC Trunking",
+        "cable_tray_width": 150,
+        "cable_tray_height": 100,
+        "cable_tray_thickness": 2.0
+    }
+]

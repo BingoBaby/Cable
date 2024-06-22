@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var peMOC = document.getElementById('peMoc').value;
         var voltageRating = document.getElementById('voltageRating').value;
 
-        let checkHelp = document.getElementById('help');
+        let checkDerating = document.getElementById('derating-factor');
 
         // Gọi Json
         // Sử dụng Fetch API để tải file JSON
@@ -273,13 +273,47 @@ document.addEventListener("DOMContentLoaded", function() {
                             }
 
                             var table = document.getElementById('resultTable');
-                            for (var i = 0; i < table.rows.length; i++) {
+
+                            var headerRow = [];
+                            for (var j = 0; j < table.rows[0].cells.length - 1; j++) {
+                                headerRow.push(table.rows[0].cells[j].textContent);
+                            }
+
+                            headerRow.push("Name of Area/Plant/Zone");
+                            headerRow.push("Area/Plant/Zone Number");
+                            headerRow.push("Cable Tray Segment");
+                            headerRow.push("Name of Equipment");
+                            headerRow.push("Equipment Tag");
+                            headerRow.push("Quantity");
+                            headerRow.push("Current");
+
+                            data.push(headerRow);
+                            
+                            for (var i = 1; i < table.rows.length; i++) {
                                 var rowData = [];
                                 for (var j = 0; j < table.rows[i].cells.length - 1; j++) { //không lấy cột cuối trong table html
                                     rowData.push(table.rows[i].cells[j].textContent);
                                 }
+
+                                var areaPlantZoneName = document.getElementById('areaPlantZoneName').value;
+                                var areaPlantZoneNumber = document.getElementById('areaPlantZoneNumber').value;
+                                var cableTraySegment= document.getElementById('cableTraySegment').value;
+                                var equipmentName = document.getElementById('equipmentName').value;
+                                var equipmentTag = document.getElementById('equipmentTag').value;
+                                var quantity = document.getElementById('quantity').value;
+                                var current = document.getElementById('current').value;
+
+                                rowData.push(areaPlantZoneName);
+                                rowData.push(areaPlantZoneNumber);
+                                rowData.push(cableTraySegment);
+                                rowData.push(equipmentName);
+                                rowData.push(equipmentTag);
+                                rowData.push(quantity);
+                                rowData.push(current);
+
                                 data.push(rowData);
                             }
+
                         
                             // Tạo một Worksheet từ mảng dữ liệu
                             var ws = XLSX.utils.aoa_to_sheet(data);
@@ -315,9 +349,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         
                             // Xuất Workbook thành file Excel
                             XLSX.writeFile(wb, 'data.xlsx');
-                            //-----------------------------------------------------------------------------------
-                        });                                            
-                        
+                        });                                 
+                        //-----------------------------------------------------------------------------------           
                     })
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
@@ -348,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let newCurrent = null;
         let VoltageDrop = null; 
         function CalculateStep7(MethodOfInstallation, conductorsMoC, n, selectTypeSystem, selectNoOfCore) {
-            if(checkHelp.checked) {
+            if(!checkDerating.checked) {
                 if(MethodOfInstallation == "air" && conductorsMoC == "Copper") {
                     if (selectTypeSystem == "1Ph+N") {
                         if(selectNoOfCore == "single") {
@@ -470,8 +503,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var selectNumberCore = document.getElementById('air-options').value;
 
         console.log(selectNumberCore);
-        // --------------------- Table result -------------------------
-        
+        // --------------------- local storage -------------------------
+        localStorage.setItem('current', current);
         //-----------------------------------------------------------------------
     });
 
