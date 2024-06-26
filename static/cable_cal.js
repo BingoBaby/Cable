@@ -23,6 +23,17 @@ document.addEventListener("DOMContentLoaded", function() {
     function TVDpercent(TVD, PtoPvoltage) {
         return (TVD * 100) / PtoPvoltage;
     }
+
+    function saveData() {
+        var table = document.getElementById('resultTable');
+        var tableBody = table.querySelector('tbody');
+        var rows = Array.from(tableBody.querySelectorAll('tr'));
+        var data = rows.map(row => {
+            var cells = Array.from(row.querySelectorAll('td')).slice(0, -1); // Exclude the last cell which contains the delete button
+            return cells.map(cell => cell.textContent);
+        });
+        localStorage.setItem('tableData', JSON.stringify(data));
+    }
      
     // Calculate Button
     var calculateButton = document.getElementById("calculateButton");
@@ -80,8 +91,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let checkDerating = document.getElementById('derating-factor');
 
+        var cableTraySegment = document.getElementById('cableTraySegment').value;
+
         // Gọi Json
         // Sử dụng Fetch API để tải file JSON
+        let cableName = null;
+        let cableDiameter = null;
+
         fetch('static/DataCable.json')
             .then(response => {
                 // Kiểm tra xem request có thành công không
@@ -186,7 +202,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         console.log(cableId);
 
-                        let cableName = null;
                         if(cableId != null) {
                             for(const item of all) {
                                 if(item.Cable_id == cableId) {
@@ -196,165 +211,29 @@ document.addEventListener("DOMContentLoaded", function() {
                             }
                         }
 
+                        if(cableId != null) {
+                            for(const item of all) {
+                                if(item.Cable_id == cableId) {
+                                    cableDiameter = item.Cable_diameter;
+                                    break;
+                                }
+                            }
+                        }
+                         
+                        console.log("Cable Diameter: ", cableDiameter);
+
                         console.log("Cable name: ", cableName);
 
                         let CablePE = cableName.split(' 0.6/1 kV')[0];
                         console.log("CablePE: ", CablePE);
 
                         //---------------table------------------
-                        var table = document.getElementById('resultTable');
-                        var tableBody = table.querySelector('tbody');
-                        if(!tableBody) {
-                            tableBody= document.createElement('tbody');
-                            table.appendChild(tableBody);
-                        }
-
-                        var newRow = document.createElement('tr');
-
-                        var powerCell = document.createElement('td');
-                        powerCell.textContent = powerInKW;
-                        newRow.appendChild(powerCell);
-
-                        var PeMocCell = document.createElement('td');
-                        PeMocCell.textContent = peMOC;
-                        newRow.appendChild(PeMocCell);
-
-                        var cableNameCell = document.createElement('td');
-                        cableNameCell.textContent = cableName;
-                        newRow.appendChild(cableNameCell);
-
-                        var cablePECell = document.createElement('td');
-                        cablePECell.textContent = CablePE;
-                        newRow.appendChild(cablePECell);
-
-                        var insulationCell = document.createElement('td');
-                        insulationCell.textContent = typeOfInsulation;
-                        newRow.appendChild(insulationCell);
-
-                        var powerFactorCell = document.createElement('td');
-                        powerFactorCell.textContent = powerFactor;
-                        newRow.appendChild(powerFactorCell);
-
-                        var VoltageDropCell = document.createElement('td');
-                        VoltageDropCell.textContent = step7111[1];
-                        newRow.appendChild(VoltageDropCell);
-
-                        var FinalLengthCell = document.createElement('td');
-                        FinalLengthCell.textContent = finalLength;
-                        newRow.appendChild(FinalLengthCell);
-
-                        var deleteCell = document.createElement('td');
-                        // Tạo nút xóa
-                        var deleteButton = document.createElement('button');
-                        deleteButton.textContent = 'X';
-                        deleteButton.classList.add('delete-button'); // Thêm lớp cho nút xóa để dễ dàng chọn bằng JavaScript
-                        // Gắn sự kiện click cho nút xóa
-                        deleteButton.addEventListener('click', function() {
-                            // Xóa hàng khi nút xóa được nhấp vào
-                            newRow.remove();
-                        });
-                
-                        deleteCell.appendChild(deleteButton);
-                        // Thêm ô chứa nút xóa vào hàng mới
-                        newRow.appendChild(deleteCell);
-                
-                        tableBody.appendChild(newRow);
-                        //---------------------------------------------------------------
-                        //-------------------------Excel---------------------------------
-                        document.getElementById('exportButton').addEventListener('click', function() {
-                            // Tạo một Workbook mới
-                            var wb = XLSX.utils.book_new();
-                            
-                            // Tạo một mảng chứa dữ liệu từ bảng HTML
-                            var data = [];
-                            //Thêm 4 dòng trống trong excel
-                            for (var i = 0; i < 4; i++) {
-                                data.push([""]); // Thêm một mảng rỗng vào mảng dữ liệu
-                            }
-
-                            var table = document.getElementById('resultTable');
-
-                            var headerRow = [];
-                            for (var j = 0; j < table.rows[0].cells.length - 1; j++) {
-                                headerRow.push(table.rows[0].cells[j].textContent);
-                            }
-
-                            headerRow.push("Name of Area/Plant/Zone");
-                            headerRow.push("Area/Plant/Zone Number");
-                            headerRow.push("Cable Tray Segment");
-                            headerRow.push("Name of Equipment");
-                            headerRow.push("Equipment Tag");
-                            headerRow.push("Quantity");
-                            headerRow.push("Current");
-
-                            data.push(headerRow);
-                            
-                            for (var i = 1; i < table.rows.length; i++) {
-                                var rowData = [];
-                                for (var j = 0; j < table.rows[i].cells.length - 1; j++) { //không lấy cột cuối trong table html
-                                    rowData.push(table.rows[i].cells[j].textContent);
-                                }
-
-                                var areaPlantZoneName = document.getElementById('areaPlantZoneName').value;
-                                var areaPlantZoneNumber = document.getElementById('areaPlantZoneNumber').value;
-                                var cableTraySegment= document.getElementById('cableTraySegment').value;
-                                var equipmentName = document.getElementById('equipmentName').value;
-                                var equipmentTag = document.getElementById('equipmentTag').value;
-                                var quantity = document.getElementById('quantity').value;
-                                var current = document.getElementById('current').value;
-
-                                rowData.push(areaPlantZoneName);
-                                rowData.push(areaPlantZoneNumber);
-                                rowData.push(cableTraySegment);
-                                rowData.push(equipmentName);
-                                rowData.push(equipmentTag);
-                                rowData.push(quantity);
-                                rowData.push(current);
-
-                                data.push(rowData);
-                            }
-
-                        
-                            // Tạo một Worksheet từ mảng dữ liệu
-                            var ws = XLSX.utils.aoa_to_sheet(data);
-                        
-                            // Điều chỉnh độ rộng của các cột dựa trên nội dung
-                            var range = XLSX.utils.decode_range(ws['!ref']);
-                            for (var C = range.s.c; C <= range.e.c; ++C) {
-                                var maxCellLength = 0;
-                                for (var R = range.s.r; R <= range.e.r; ++R) {
-                                    var cellAddress = {c: C, r: R};
-                                    var cellRef = XLSX.utils.encode_cell(cellAddress);
-                                    if (!ws[cellRef]) continue;
-                                    var cellLength = ws[cellRef].v.toString().length;
-                                    if (cellLength > maxCellLength) maxCellLength = cellLength;
-                                }
-                                ws['!cols'] = ws['!cols'] || [];
-                                ws['!cols'][C] = {wch: maxCellLength + 2}; // Tăng kích thước một chút để tránh tràn nội dung
-                            }
-                        
-                            // Căn giữa các giá trị trong các ô
-                            var range = XLSX.utils.decode_range(ws['!ref']);
-                            for (var R = range.s.r; R <= range.e.r; ++R) {
-                                for (var C = range.s.c; C <= range.e.c; ++C) {
-                                    var cellAddress = {c: C, r: R};
-                                    var cellRef = XLSX.utils.encode_cell(cellAddress);
-                                    if (!ws[cellRef]) continue;
-                                    ws[cellRef].s = {alignment: {horizontal: 'center', vertical: 'center', wrapText: true}};
-                                }
-                            }
-                        
-                            // Thêm Worksheet vào Workbook với tên là "Data"
-                            XLSX.utils.book_append_sheet(wb, ws, "Data");
-                        
-                            // Xuất Workbook thành file Excel
-                            XLSX.writeFile(wb, 'data.xlsx');
-                        });                                 
-                        //-----------------------------------------------------------------------------------           
+                        updateTable(cableName, step7111[1], CablePE, cableDiameter);                                 
+                        //-----------------------------------------------------------------------------------      
                     })
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
-                    });
+                    });    
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
@@ -371,10 +250,171 @@ document.addEventListener("DOMContentLoaded", function() {
         // let methodId8;
         // let methodId9;
 
-        
         // function Show(MethodOfInstallation){
         //     return MethodOfInstallation
         // }
+
+        function updateTable(cableName, voltageDrop, CablePE, cableDiameter) {
+            var table = document.getElementById('resultTable');
+            var tableBody = table.querySelector('tbody');
+
+            console.log("Cable 2: ", cableName);
+
+            if(!tableBody) {
+                tableBody= document.createElement('tbody');
+                table.appendChild(tableBody);
+            }
+
+            var newRow = document.createElement('tr');
+
+            var powerCell = document.createElement('td');
+            powerCell.textContent = powerInKW;
+            newRow.appendChild(powerCell);
+
+            var PeMocCell = document.createElement('td');
+            PeMocCell.textContent = peMOC;
+            newRow.appendChild(PeMocCell);
+
+            var cableNameCell = document.createElement('td');
+            cableNameCell.textContent = cableName;
+            newRow.appendChild(cableNameCell);
+
+            var cablePECell = document.createElement('td');
+            cablePECell.textContent = CablePE;
+            newRow.appendChild(cablePECell);
+
+            var cableTraySegmentCell = document.createElement('td');
+            cableTraySegmentCell.textContent = cableTraySegment;
+            newRow.appendChild(cableTraySegmentCell);
+
+            var insulationCell = document.createElement('td');
+            insulationCell.textContent = typeOfInsulation;
+            newRow.appendChild(insulationCell);
+
+            var powerFactorCell = document.createElement('td');
+            powerFactorCell.textContent = powerFactor;
+            newRow.appendChild(powerFactorCell);
+
+            var VoltageDropCell = document.createElement('td');
+            VoltageDropCell.textContent = voltageDrop;
+            newRow.appendChild(VoltageDropCell);
+
+            var DiameterCell = document.createElement('td');
+            DiameterCell.textContent = cableDiameter;
+            newRow.appendChild(DiameterCell);
+
+            var FinalLengthCell = document.createElement('td');
+            FinalLengthCell.textContent = finalLength;
+            newRow.appendChild(FinalLengthCell);
+
+            var deleteCell = document.createElement('td');
+            // Tạo nút xóa
+            var deleteButton = document.createElement('button');
+            deleteButton.textContent = 'X';
+            deleteButton.classList.add('delete-button'); // Thêm lớp cho nút xóa để dễ dàng chọn bằng JavaScript
+            // Gắn sự kiện click cho nút xóa
+            deleteButton.addEventListener('click', function() {
+                // Xóa hàng khi nút xóa được nhấp vào
+                newRow.remove();
+                saveData();
+            });
+    
+            deleteCell.appendChild(deleteButton);
+            // Thêm ô chứa nút xóa vào hàng mới
+            newRow.appendChild(deleteCell);
+    
+            tableBody.appendChild(newRow);
+            //Local storage
+            saveData();
+            //---------------------------------------------------------------
+            //-------------------------Excel---------------------------------
+            document.getElementById('exportButton').addEventListener('click', function() {
+                // Tạo một Workbook mới
+                var wb = XLSX.utils.book_new();
+                
+                // Tạo một mảng chứa dữ liệu từ bảng HTML
+                var data = [];
+                //Thêm 4 dòng trống trong excel
+                for (var i = 0; i < 4; i++) {
+                    data.push([""]); // Thêm một mảng rỗng vào mảng dữ liệu
+                }
+
+                var table = document.getElementById('resultTable');
+
+                var headerRow = [];
+                for (var j = 0; j < table.rows[0].cells.length - 1; j++) {
+                    headerRow.push(table.rows[0].cells[j].textContent);
+                }
+
+                headerRow.push("Name of Area/Plant/Zone");
+                headerRow.push("Area/Plant/Zone Number");
+                headerRow.push("Name of Equipment");
+                headerRow.push("Equipment Tag");
+                headerRow.push("Quantity");
+                headerRow.push("Current");
+
+                data.push(headerRow);
+                
+                for (var i = 1; i < table.rows.length; i++) {
+                    var rowData = [];
+                    for (var j = 0; j < table.rows[i].cells.length - 1; j++) { //không lấy cột cuối trong table html
+                        rowData.push(table.rows[i].cells[j].textContent);
+                    }
+
+                    var areaPlantZoneName = document.getElementById('areaPlantZoneName').value;
+                    var areaPlantZoneNumber = document.getElementById('areaPlantZoneNumber').value;
+                    var equipmentName = document.getElementById('equipmentName').value;
+                    var equipmentTag = document.getElementById('equipmentTag').value;
+                    var quantity = document.getElementById('quantity').value;
+                    var current = document.getElementById('current').value;
+
+                    rowData.push(areaPlantZoneName);
+                    rowData.push(areaPlantZoneNumber);
+                    rowData.push(equipmentName);
+                    rowData.push(equipmentTag);
+                    rowData.push(quantity);
+                    rowData.push(current);
+
+                    data.push(rowData);
+                }
+
+            
+                // Tạo một Worksheet từ mảng dữ liệu
+                var ws = XLSX.utils.aoa_to_sheet(data);
+            
+                // Điều chỉnh độ rộng của các cột dựa trên nội dung
+                var range = XLSX.utils.decode_range(ws['!ref']);
+                for (var C = range.s.c; C <= range.e.c; ++C) {
+                    var maxCellLength = 0;
+                    for (var R = range.s.r; R <= range.e.r; ++R) {
+                        var cellAddress = {c: C, r: R};
+                        var cellRef = XLSX.utils.encode_cell(cellAddress);
+                        if (!ws[cellRef]) continue;
+                        var cellLength = ws[cellRef].v.toString().length;
+                        if (cellLength > maxCellLength) maxCellLength = cellLength;
+                    }
+                    ws['!cols'] = ws['!cols'] || [];
+                    ws['!cols'][C] = {wch: maxCellLength + 2}; // Tăng kích thước một chút để tránh tràn nội dung
+                }
+            
+                // Căn giữa các giá trị trong các ô
+                var range = XLSX.utils.decode_range(ws['!ref']);
+                for (var R = range.s.r; R <= range.e.r; ++R) {
+                    for (var C = range.s.c; C <= range.e.c; ++C) {
+                        var cellAddress = {c: C, r: R};
+                        var cellRef = XLSX.utils.encode_cell(cellAddress);
+                        if (!ws[cellRef]) continue;
+                        ws[cellRef].s = {alignment: {horizontal: 'center', vertical: 'center', wrapText: true}};
+                    }
+                }
+            
+                // Thêm Worksheet vào Workbook với tên là "Data"
+                XLSX.utils.book_append_sheet(wb, ws, "Data");
+            
+                // Xuất Workbook thành file Excel
+                XLSX.writeFile(wb, 'data.xlsx');
+            });
+        }
 
         var MethodOfInstallation = document.getElementById('installation').value;
         var conductorsMoC = document.getElementById('conductors').value;

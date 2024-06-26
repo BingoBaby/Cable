@@ -15,12 +15,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         // Lấy giá trị từ localStorage
-    var current = localStorage.getItem('current'); // Sửa lại key phù hợp với tên của dữ liệu lưu
+    var  zonesegment = document.getElementById('zoneSegment');
+    var totalCableSegment = document.getElementById('totalCables');
+    var totalDiameter = document.getElementById('totalDiameter');
 
-        // Hiển thị giá trị trong input của cable-tray-page.html
-    var totalCablesInput = document.getElementById('totalCables');
-    if (totalCablesInput && current !== null) { // Kiểm tra totalCablesInput và current khác null trước khi thực hiện gán giá trị
-        totalCablesInput.value = current;
+    function updateSegment() {
+        var selectSegment = zonesegment.value;
+        var tableData = JSON.parse(localStorage.getItem('tableData')) || [];
+        
+        var total = tableData.filter(row => row[4] === selectSegment).length;
+        totalCableSegment.value = total;
+
+        totalDiameter.value = tableData.reduce(function(total, row){
+            if(row[4] == selectSegment) {
+                return (total + parseFloat(row[8]));
+            }
+            return total;
+        }, 0);
     }
-    console.log("totalCablesInput: ", totalCablesInput);
+
+    zonesegment.addEventListener('change', updateSegment);
+
+    updateSegment();
+
 });
